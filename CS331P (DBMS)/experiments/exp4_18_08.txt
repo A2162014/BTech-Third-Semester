@@ -1,0 +1,234 @@
+SQL> CREATE TABLE Salesman (Salesman_id number(4), Name varchar2(20), City varchar2(20), Commission varchar2(20), primary key(Salesman_id));
+
+Table created.
+
+SQL> CREATE TABLE Customer1 (Customer_id number(4), Cust_Name varchar2(20), City varchar2(20), Grade number(3), primary key(Customer_id), Salesman_id references Salesman(Salesman_id) on delete set null);
+
+Table created.
+
+SQL> CREATE TABLE Orders (Ord_No number(5), Purchase_Amt number(10,2), Ord_Date Date, Customer_id references Customer1(Customer_id) on delete cascade , Salesman_id references Salesman(Salesman_id) on delete cascade);
+
+Table created.
+
+SQL> desc salesman;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SALESMAN_ID                               NOT NULL NUMBER(4)
+ NAME                                               VARCHAR2(20)
+ CITY                                               VARCHAR2(20)
+ COMMISSION                                         VARCHAR2(20)
+
+SQL> desc customer1;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CUSTOMER_ID                               NOT NULL NUMBER(4)
+ CUST_NAME                                          VARCHAR2(20)
+ CITY                                               VARCHAR2(20)
+ GRADE                                              NUMBER(3)
+ SALESMAN_ID                                        NUMBER(4)
+
+SQL> desc orders;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ORD_NO                                             NUMBER(5)
+ PURCHASE_AMT                                       NUMBER(10,2)
+ ORD_DATE                                           DATE
+ CUSTOMER_ID                                        NUMBER(4)
+ SALESMAN_ID                                        NUMBER(4)
+	
+SQL> INSERT INTO Salesman VALUES (1000, 'JOHN', 'BANGALORE', '25%');
+
+1 row created.
+
+SQL> INSERT INTO Salesman VALUES (2000, 'RAVI', 'BANGALORE', '20%');
+
+1 row created.
+
+SQL> INSERT INTO Salesman VALUES (3000, 'KUMAR', 'MYSORE', '15%');
+
+1 row created.
+
+SQL> INSERT INTO Salesman VALUES (4000, 'SMITH', 'DELHI', '30%');
+
+1 row created.
+
+SQL> INSERT INTO Salesman VALUES (5000, 'HARSHA', 'HYDRABAD', '15%');
+
+1 row created.
+
+SQL> select * from salesman;
+
+SALESMAN_ID NAME                 CITY                 COMMISSION                
+----------- -------------------- -------------------- --------------------      
+       1000 JOHN                 BANGALORE            25%                       
+       2000 RAVI                 BANGALORE            20%                       
+       3000 KUMAR                MYSORE               15%                       
+       4000 SMITH                DELHI                30%                       
+       5000 HARSHA               HYDRABAD             15%                       
+
+SQL> INSERT INTO Customer1 VALUES (10, 'PREETHI', 'BANGALORE', 100, 1000);
+
+1 row created.
+
+SQL> INSERT INTO Customer1 VALUES (11, 'VIVEK', 'MANGALORE', 300, 1000);
+
+1 row created.
+
+SQL> INSERT INTO Customer1 VALUES (12, 'BHASKAR', 'CHENNAI', 400, 2000);
+
+1 row created.
+
+SQL> INSERT INTO Customer1 VALUES (13, 'CHETHAN', 'BANGALORE', 200, 2000);
+
+1 row created.
+
+SQL> INSERT INTO Customer1 VALUES (14, 'MAMATHA', 'BANGALORE', 400, 3000);
+
+1 row created.
+
+SQL> select * from customer1;
+
+CUSTOMER_ID CUST_NAME            CITY                      GRADE SALESMAN_ID    
+----------- -------------------- -------------------- ---------- -----------    
+         10 PREETHI              BANGALORE                   100        1000    
+         11 VIVEK                MANGALORE                   300        1000    
+         12 BHASKAR              CHENNAI                     400        2000    
+         13 CHETHAN              BANGALORE                   200        2000    
+         14 MAMATHA              BANGALORE                   400        3000    
+
+SQL> INSERT INTO Orders VALUES (50, 5000, '04-MAY-2017', 10, 1000);
+
+1 row created.
+
+SQL> INSERT INTO Orders VALUES (51, 450, '20-JAN-2017', 10, 2000);
+
+1 row created.
+
+SQL> INSERT INTO Orders VALUES (52, 1000, '24-FEB-2017', 13, 2000);
+
+1 row created.
+
+SQL> INSERT INTO Orders VALUES (53, 3500, '13-APR-2017', 14, 3000);
+
+1 row created.
+
+SQL> INSERT INTO Orders VALUES (54, 550, '09-MAR-2017', 12, 2000);
+
+1 row created.
+
+SQL> select * from orders;
+
+    ORD_NO PURCHASE_AMT ORD_DATE  CUSTOMER_ID SALESMAN_ID                       
+---------- ------------ --------- ----------- -----------                       
+        50         5000 04-MAY-17          10        1000                       
+        51          450 20-JAN-17          10        2000                       
+        52         1000 24-FEB-17          13        2000                       
+        53         3500 13-APR-17          14        3000                       
+        54          550 09-MAR-17          12        2000                       
+
+SQL> SELECT Grade, COUNT (*)
+  2  FROM Customer1
+  3  GROUP BY Grade
+  4  HAVING Grade >
+  5           (SELECT AVG(Grade)
+  6            FROM Customer1
+  7            WHERE City = 'BANGALORE');
+
+     GRADE   COUNT(*)                                                           
+---------- ----------                                                           
+       400          2                                                           
+       300          1                                                           
+
+SQL> SELECT Salesman_id, Name
+  2  FROM Salesman S
+  3  WHERE 1 <
+  4      (SELECT COUNT(*)
+  5       FROM Customer
+  6       WHERE Salesman_id=S.Salesman_id);
+
+SALESMAN_ID NAME                                                                
+----------- --------------------                                                
+       1000 JOHN                                                                
+       2000 RAVI                                                                
+       3000 KUMAR                                                               
+       4000 SMITH                                                               
+       5000 HARSHA                                                              
+
+SQL> SELECT S.Salesman_id, Name, Cust_name, Commission
+  2  FROM Salesman S, Customer1 C
+  3  WHERE S.City = C.City
+  4  UNION
+  5  (SELECT Salesman_id, Name, 'NO MATCH', Commission
+  6   FROM Salesman
+  7   WHERE NOT City = ANY
+  8   (SELECT City
+  9    FROM Customer1))
+ 10  ORDER BY 2 DESC;
+
+SALESMAN_ID NAME                 CUST_NAME            COMMISSION                
+----------- -------------------- -------------------- --------------------      
+       4000 SMITH                NO MATCH             30%                       
+       2000 RAVI                 CHETHAN              20%                       
+       2000 RAVI                 MAMATHA              20%                       
+       2000 RAVI                 PREETHI              20%                       
+       3000 KUMAR                NO MATCH             15%                       
+       1000 JOHN                 CHETHAN              25%                       
+       1000 JOHN                 MAMATHA              25%                       
+       1000 JOHN                 PREETHI              25%                       
+       5000 HARSHA               NO MATCH             15%                       
+
+9 rows selected.
+
+SQL> CREATE VIEW bestsalesman
+  2  AS SELECT B.Ord_date, S.Salesman_id, S.Name
+  3  FROM Salesman S, Orders B
+  4  WHERE S.Salesman_id = B.Salesman_id
+  5  AND B. Purchase_Amt=
+  6           (SELECT MAX (Purchase_Amt)
+  7            FROM Orders O
+  8            WHERE O.Ord_date = B.Ord_date);
+
+View created.
+
+SQL> SELECT * FROM bestsalesman;
+
+ORD_DATE  SALESMAN_ID NAME                                                      
+--------- ----------- --------------------                                      
+04-MAY-17        1000 JOHN                                                      
+20-JAN-17        2000 RAVI                                                      
+24-FEB-17        2000 RAVI                                                      
+13-APR-17        3000 KUMAR                                                     
+09-MAR-17        2000 RAVI                                                      
+
+SQL> DELETE FROM Salesman
+  2  WHERE Salesman_id=1000;
+
+1 row deleted.
+
+SQL> select * from salesman;
+
+SALESMAN_ID NAME                 CITY                 COMMISSION                
+----------- -------------------- -------------------- --------------------      
+       2000 RAVI                 BANGALORE            20%                       
+       3000 KUMAR                MYSORE               15%                       
+       4000 SMITH                DELHI                30%                       
+       5000 HARSHA               HYDRABAD             15%                       
+
+SQL> select * from customer1;
+
+CUSTOMER_ID CUST_NAME            CITY                      GRADE SALESMAN_ID    
+----------- -------------------- -------------------- ---------- -----------    
+         10 PREETHI              BANGALORE                   100                
+         11 VIVEK                MANGALORE                   300                
+         12 BHASKAR              CHENNAI                     400        2000    
+         13 CHETHAN              BANGALORE                   200        2000    
+         14 MAMATHA              BANGALORE                   400        3000    
+
+SQL> select * from orders;
+
+    ORD_NO PURCHASE_AMT ORD_DATE  CUSTOMER_ID SALESMAN_ID                       
+---------- ------------ --------- ----------- -----------                       
+        51          450 20-JAN-17          10        2000                       
+        52         1000 24-FEB-17          13        2000                       
+        53         3500 13-APR-17          14        3000                       
+        54          550 09-MAR-17          12        2000                       

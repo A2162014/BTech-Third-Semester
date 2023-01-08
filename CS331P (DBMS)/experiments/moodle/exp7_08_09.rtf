@@ -1,0 +1,104 @@
+SQL> create table employees (employeeid number(10) not null, employeename varchar2(50) not null, employeecity varchar2(50), primary key (employeeid));
+
+Table created.
+
+SQL> desc employees;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPLOYEEID                                NOT NULL NUMBER(10)
+ EMPLOYEENAME                              NOT NULL VARCHAR2(50)
+ EMPLOYEECITY                                       VARCHAR2(50)
+
+SQL> insert into employees values(1,'XXX','Chennai');
+
+1 row created.
+
+SQL> insert into employees values(2,'XYZ','Mumbai');
+
+1 row created.
+
+SQL> insert into employees values(3,'YYY','Calcutta');
+
+1 row created.
+
+SQL> select * from employees;
+
+EMPLOYEEID EMPLOYEENAME
+---------- --------------------------------------------------
+EMPLOYEECITY
+--------------------------------------------------
+         1 XXX
+Chennai
+
+         2 XYZ
+Mumbai
+
+         3 YYY
+Calcutta
+
+
+SQL> set linesize 1500;
+SQL> select * from employees;
+
+EMPLOYEEID EMPLOYEENAME                                       EMPLOYEECITY
+---------- -------------------------------------------------- --------------------------------------------------
+         1 XXX                                                Chennai
+         2 XYZ                                                Mumbai
+         3 YYY                                                Calcutta
+
+SQL> set serveroutput on;
+SQL> @ C:\Users\2162014\DBMS\temp_emp.sql;
+
+Table created.
+
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from tempory_employee;
+
+EMPLOYEEID EMPLOYEENAME                                       EMPLOYEECITY
+---------- -------------------------------------------------- --------------------------------------------------
+         1 XXX                                                Chennai
+         3 YYY                                                Calcutta
+         2 ZZZ                                                Delhi
+
+SQL> @ C:\Users\2162014\DBMS\temp_emp1.sql;
+
+Table created.
+
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from tempory_employee1;
+
+EMPLOYEEID EMPLOYEENAME                                       EMPLOYEECITY
+---------- -------------------------------------------------- --------------------------------------------------
+         1 XXX                                                Chennai
+         2 XYZ                                                Mumbai
+         3 YYY                                                Calcutta
+
+SQL> @ C:\Users\2162014\DBMS\temp_emp2.sql;
+
+Table created.
+
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from tempory_employee2;
+
+EMPLOYEEID EMPLOYEENAME                                       EMPLOYEECITY
+---------- -------------------------------------------------- --------------------------------------------------
+         2 XYZ                                                Gurgaon
+         3 YYY                                                Calcutta
+
+SQL> @ C:\Users\2162014\DBMS\temp_emp3.sql;
+
+Table created.
+
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from tempory_employee3;
+
+EMPLOYEEID EMPLOYEENAME                                       EMPLOYEECITY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+---------- -------------------------------------------------- --------------------------------------------------                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          1 XXX                                                Chandigarh                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  3 YYY                                                Calcutta                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      

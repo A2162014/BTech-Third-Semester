@@ -1,0 +1,2 @@
+remove size_of_list
+update in delete_at_position and insert_at_position functions

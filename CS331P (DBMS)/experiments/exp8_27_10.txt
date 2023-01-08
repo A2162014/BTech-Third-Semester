@@ -1,0 +1,131 @@
+SQL> create table Customers (ID number(1), Name varchar2(20), Age number(2), Address varchar2(20), Salary float, primary key(ID));
+
+Table created.
+
+SQL> insert into Customers values(&ID,'&Name', &Age,'&Address', &Salary);
+Enter value for id: 1
+Enter value for name: Ramesh
+Enter value for age: 32
+Enter value for address: Ahmedabad
+Enter value for salary: 2000
+old   1: insert into Customers values(&ID,'&Name', &Age,'&Address', &Salary)
+new   1: insert into Customers values(1,'Ramesh', 32,'Ahmedabad', 2000)
+
+1 row created.
+
+SQL> insert into Customers values(&ID,'&Name', &Age,'&Address', &Salary);
+Enter value for id: 2
+Enter value for name: Khilan
+Enter value for age: 25
+Enter value for address: Delhi
+Enter value for salary: 1500
+old   1: insert into Customers values(&ID,'&Name', &Age,'&Address', &Salary)
+new   1: insert into Customers values(2,'Khilan', 25,'Delhi', 1500)
+
+1 row created.
+
+SQL> insert into Customers values(&ID,'&Name', &Age,'&Address', &Salary);
+Enter value for id: 3
+Enter value for name: Kaushik
+Enter value for age: 23
+Enter value for address: Kota
+Enter value for salary: 2000
+old   1: insert into Customers values(&ID,'&Name', &Age,'&Address', &Salary)
+new   1: insert into Customers values(3,'Kaushik', 23,'Kota', 2000)
+
+1 row created.
+
+SQL> insert into Customers values(&ID,'&Name', &Age,'&Address', &Salary);
+Enter value for id: 4
+Enter value for name: Chaitali
+Enter value for age: 25
+Enter value for address: Mumbai
+Enter value for salary:
+old   1: insert into Customers values(&ID,'&Name', &Age,'&Address', &Salary)
+new   1: insert into Customers values(4,'Chaitali', 25,'Mumbai', )
+insert into Customers values(4,'Chaitali', 25,'Mumbai', )
+                                                        *
+ERROR at line 1:
+ORA-00936: missing expression
+
+
+SQL> insert into Customers values(&ID,'&Name', &Age,'&Address', &Salary);
+Enter value for id: 4
+Enter value for name: Chaitali
+Enter value for age: 25
+Enter value for address: Mumbai
+Enter value for salary: 6500
+old   1: insert into Customers values(&ID,'&Name', &Age,'&Address', &Salary)
+new   1: insert into Customers values(4,'Chaitali', 25,'Mumbai', 6500)
+
+1 row created.
+
+SQL> insert into Customers values(&ID,'&Name', &Age,'&Address', &Salary);
+Enter value for id: 5
+Enter value for name: Hardik
+Enter value for age: 27
+Enter value for address: Bhopal
+Enter value for salary: 8500
+old   1: insert into Customers values(&ID,'&Name', &Age,'&Address', &Salary)
+new   1: insert into Customers values(5,'Hardik', 27,'Bhopal', 8500)
+
+1 row created.
+
+SQL> insert into Customers values(&ID,'&Name', &Age,'&Address', &Salary);
+Enter value for id: 6
+Enter value for name: Komal
+Enter value for age: 22
+Enter value for address: MP
+Enter value for salary: 4500
+old   1: insert into Customers values(&ID,'&Name', &Age,'&Address', &Salary)
+new   1: insert into Customers values(6,'Komal', 22,'MP', 4500)
+
+1 row created.
+
+SQL> desc customers
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                        NOT NULL NUMBER(1)
+ NAME                                               VARCHAR2(20)
+ AGE                                                NUMBER(2)
+ ADDRESS                                            VARCHAR2(20)
+ SALARY                                             FLOAT(126)
+
+SQL> select * from customers;
+
+        ID NAME                        AGE ADDRESS                  SALARY      
+---------- -------------------- ---------- -------------------- ----------      
+         1 Ramesh                       32 Ahmedabad                  3000      
+         2 Khilan                       25 Delhi                      2500      
+         3 Kaushik                      23 Kota                       3000      
+         4 Chaitali                     25 Mumbai                     7500      
+         5 Hardik                       27 Bhopal                     9500      
+         6 Komal                        22 MP                         5500      
+
+6 rows selected.
+
+SQL> set serveroutput on
+SQL> DECLARE
+  2     c_id customers.id%type;
+  3     c_name customers.name%type;
+  4     c_addr customers.address%type;
+  5     CURSOR c_customers is
+  6        SELECT id, name, address FROM customers;
+  7  BEGIN
+  8     OPEN c_customers;
+  9     LOOP
+ 10     FETCH c_customers into c_id, c_name, c_addr;
+ 11        EXIT WHEN c_customers%notfound;
+ 12        dbms_output.put_line(c_id || ' ' || c_name || ' ' || c_addr);
+ 13     END LOOP;
+ 14     CLOSE c_customers;
+ 15  END;
+ 16  /
+1 Ramesh Ahmedabad                                                              
+2 Khilan Delhi                                                                  
+3 Kaushik Kota                                                                  
+4 Chaitali Mumbai                                                               
+5 Hardik Bhopal                                                                 
+6 Komal MP                                                                      
+
+PL/SQL procedure successfully completed.

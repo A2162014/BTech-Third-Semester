@@ -1,0 +1,316 @@
+SQL> create table Employee(
+  2  empno Int,
+  3  name varchar2(10),
+  4  sal number(10,2));
+
+Table created.
+
+SQL> select * from Employee;
+
+no rows selected
+
+SQL> desc Employee;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                              NUMBER(38)
+ NAME                                               VARCHAR2(10)
+ SAL                                                NUMBER(10,2)
+
+SQL> insert into Employee values(001,'RAM',21654);
+
+1 row created.
+
+SQL> insert into Employee values(002,'JOE',15642);
+
+1 row created.
+
+SQL> insert into Employee values(003,'KAREEM',1644);
+
+1 row created.
+
+SQL> select * from Employee;
+
+     EMPNO NAME              SAL                                                
+---------- ---------- ----------                                                
+         1 RAM             21654                                                
+         2 JOE             15642                                                
+         3 KAREEM           1644                                                
+
+SQL> desc employee;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                              NUMBER(38)
+ NAME                                               VARCHAR2(10)
+ SAL                                                NUMBER(10,2)
+
+SQL> select NAME from Employee;
+
+NAME                                                                            
+----------                                                                      
+RAM                                                                             
+JOE                                                                             
+KAREEM                                                                          
+
+SQL> select SAL from Employee;
+
+       SAL                                                                      
+----------                                                                      
+     21654                                                                      
+     15642                                                                      
+      1644                                                                      
+
+SQL> select EMPNO from Employee;
+
+     EMPNO                                                                      
+----------                                                                      
+         1                                                                      
+         2                                                                      
+         3                                                                      
+
+SQL> select NAME from Employee where EMPNO=001;
+
+NAME                                                                            
+----------                                                                      
+RAM                                                                             
+
+SQL> select NAME from Employee where EMPNO=002;
+
+NAME                                                                            
+----------                                                                      
+JOE                                                                             
+
+SQL> select NAME from Employee where EMPNO=003;
+
+NAME                                                                            
+----------                                                                      
+KAREEM                                                                          
+
+SQL> select SAL from Employee where EMPNO=003;
+
+       SAL                                                                      
+----------                                                                      
+      1644                                                                      
+
+SQL> select SAL from Employee where EMPNO=002;
+
+       SAL                                                                      
+----------                                                                      
+     15642                                                                      
+
+SQL> select SAL from Employee where EMPNO=001;
+
+       SAL                                                                      
+----------                                                                      
+     21654                                                                      
+
+SQL> delete Employee where NAME='RAM';
+
+1 row deleted.
+
+SQL> select * from Employee;
+
+     EMPNO NAME              SAL                                                
+---------- ---------- ----------                                                
+         2 JOE             15642                                                
+         3 KAREEM           1644                                                
+
+SQL> delete Employee where EMPNO ='3';
+
+1 row deleted.
+
+SQL> select * from Employee;
+
+     EMPNO NAME              SAL                                                
+---------- ---------- ----------                                                
+         2 JOE             15642                                                
+
+SQL> drop table employee;
+
+Table dropped.
+
+SQL> create table store(store_id int, store_name varchar(10), store_loc varchar(10));
+
+Table created.
+
+SQL> desc store;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ STORE_ID                                           NUMBER(38)
+ STORE_NAME                                         VARCHAR2(10)
+ STORE_LOC                                          VARCHAR2(10)
+
+SQL> insert into store values (7704,'Manna Mart','Delhi');
+
+1 row created.
+
+SQL> insert into store values (1174,'Lulu','Chennai');
+
+1 row created.
+
+SQL> insert into store values (5487,'Neel','Bombay');
+
+1 row created.
+
+SQL> insert into store values (9546,'D-Mart','Banglore');
+
+1 row created.
+
+SQL> select * from store;
+
+  STORE_ID STORE_NAME STORE_LOC                                                 
+---------- ---------- ----------                                                
+      7704 Manna Mart Delhi                                                     
+      1174 Lulu       Chennai                                                   
+      5487 Neel       Bombay                                                    
+      9546 D-Mart     Banglore                                                  
+
+SQL> select STORE_ID from store;
+
+  STORE_ID                                                                      
+----------                                                                      
+      7704                                                                      
+      1174                                                                      
+      5487                                                                      
+      9546                                                                      
+
+SQL> select STORE_NAME from store;
+
+STORE_NAME                                                                      
+----------                                                                      
+Manna Mart                                                                      
+Lulu                                                                            
+Neel                                                                            
+D-Mart                                                                          
+
+SQL> select STORE_LOC from store;
+
+STORE_LOC                                                                       
+----------                                                                      
+Delhi                                                                           
+Chennai                                                                         
+Bombay                                                                          
+Banglore                                                                        
+
+SQL> select STORE_LOC from store WHERE STORE_ID=7704;
+
+STORE_LOC                                                                       
+----------                                                                      
+Delhi                                                                           
+
+SQL> select STORE_LOC from store WHERE STORE_ID=1174;
+
+STORE_LOC                                                                       
+----------                                                                      
+Chennai                                                                         
+
+SQL> select STORE_LOC from store WHERE STORE_ID=5487;
+
+STORE_LOC                                                                       
+----------                                                                      
+Bombay                                                                          
+
+SQL> select STORE_LOC from store WHERE STORE_ID=9546;
+
+STORE_LOC                                                                       
+----------                                                                      
+Banglore                                                                        
+
+SQL> select STORE_LOC from store ORDER BY STORE_ID;
+
+STORE_LOC                                                                       
+----------                                                                      
+Chennai                                                                         
+Bombay                                                                          
+Delhi                                                                           
+Banglore                                                                        
+
+SQL> select STORE_LOC from store ORDER BY STORE_NAME;
+
+STORE_LOC                                                                       
+----------                                                                      
+Banglore                                                                        
+Chennai                                                                         
+Delhi                                                                           
+Bombay                                                                          
+
+SQL> select STORE_NAME from store ORDER BY STORE_ID;
+
+STORE_NAME                                                                      
+----------                                                                      
+Lulu                                                                            
+Neel                                                                            
+Manna Mart                                                                      
+D-Mart                                                                          
+
+SQL> select STORE_NAME from store ORDER BY STORE_LOC;
+
+STORE_NAME                                                                      
+----------                                                                      
+D-Mart                                                                          
+Neel                                                                            
+Lulu                                                                            
+Manna Mart                                                                      
+
+SQL> select STORE_NAME from store ORDER BY STORE_LOC ASC;
+
+STORE_NAME                                                                      
+----------                                                                      
+D-Mart                                                                          
+Neel                                                                            
+Lulu                                                                            
+Manna Mart                                                                      
+
+SQL> select STORE_NAME from store ORDER BY STORE_LOC DESC;
+
+STORE_NAME                                                                      
+----------                                                                      
+Manna Mart                                                                      
+Lulu                                                                            
+Neel                                                                            
+D-Mart                                                                          
+
+SQL> select * from store;
+
+  STORE_ID STORE_NAME STORE_LOC                                                 
+---------- ---------- ----------                                                
+      7704 Manna Mart Delhi                                                     
+      1174 Lulu       Chennai                                                   
+      5487 Neel       Bombay                                                    
+      9546 D-Mart     Banglore                                                  
+
+SQL> delete store where STORE_ID = 9546;
+
+1 row deleted.
+
+SQL> select * from store;
+
+  STORE_ID STORE_NAME STORE_LOC                                                 
+---------- ---------- ----------                                                
+      7704 Manna Mart Delhi                                                     
+      1174 Lulu       Chennai                                                   
+      5487 Neel       Bombay                                                    
+
+SQL> delete store where STORE_LOC = 'Bombay';
+
+1 row deleted.
+
+SQL> select * from store;
+
+  STORE_ID STORE_NAME STORE_LOC                                                 
+---------- ---------- ----------                                                
+      7704 Manna Mart Delhi                                                     
+      1174 Lulu       Chennai                                                   
+
+SQL> delete store where STORE_NAME = 'Lulu';
+
+1 row deleted.
+
+SQL> select * from store;
+
+  STORE_ID STORE_NAME STORE_LOC                                                 
+---------- ---------- ----------                                                
+      7704 Manna Mart Delhi                                                     
+
+SQL> drop table store;
+
+Table dropped.

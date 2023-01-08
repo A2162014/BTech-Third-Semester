@@ -1,0 +1,5208 @@
+SQL> @c:/Ora/hr_main;
+******  Creating REGIONS table ....
+
+Table created.
+
+
+Index created.
+
+
+Table altered.
+
+******  Creating COUNTRIES table ....
+
+Table created.
+
+
+Table altered.
+
+******  Creating LOCATIONS table ....
+
+Table created.
+
+
+Index created.
+
+
+Table altered.
+
+
+Sequence created.
+
+******  Creating DEPARTMENTS table ....
+
+Table created.
+
+
+Index created.
+
+
+Table altered.
+
+
+Sequence created.
+
+******  Creating JOBS table ....
+
+Table created.
+
+
+Index created.
+
+
+Table altered.
+
+******  Creating EMPLOYEES table ....
+
+Table created.
+
+
+Index created.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Sequence created.
+
+******  Creating JOB_HISTORY table ....
+
+Table created.
+
+
+Index created.
+
+
+Table altered.
+
+******  Creating EMP_DETAILS_VIEW view ...
+
+View created.
+
+
+Commit complete.
+
+
+Session altered.
+
+******  Populating REGIONS table ....
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+******  Populating COUNTIRES table ....
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+******  Populating LOCATIONS table ....
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+******  Populating DEPARTMENTS table ....
+
+Table altered.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+******  Populating JOBS table ....
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+******  Populating EMPLOYEES table ....
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+******  Populating JOB_HISTORY table ....
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Table altered.
+
+
+Commit complete.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Commit complete.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Procedure created.
+
+
+Trigger created.
+
+
+Commit complete.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Commit complete.
+
+SQL> select * from employees;
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME
+----------- -------------------- -------------------------
+EMAIL                     PHONE_NUMBER         HIRE_DATE JOB_ID         SALARY
+------------------------- -------------------- --------- ---------- ----------
+COMMISSION_PCT MANAGER_ID DEPARTMENT_ID
+-------------- ---------- -------------
+        100 Steven               King
+SKING                     515.123.4567         17-JUN-87 AD_PRES         24000
+                                     90
+
+        101 Neena                Kochhar
+NKOCHHAR                  515.123.4568         21-SEP-89 AD_VP           17000
+                      100            90
+
+        102 Lex                  De Haan
+LDEHAAN                   515.123.4569         13-JAN-93 AD_VP           17000
+                      100            90
+
+        103 Alexander            Hunold
+AHUNOLD                   590.423.4567         03-JAN-90 IT_PROG          9000
+                      102            60
+
+        104 Bruce                Ernst
+BERNST                    590.423.4568         21-MAY-91 IT_PROG          6000
+                      103            60
+
+        105 David                Austin
+DAUSTIN                   590.423.4569         25-JUN-97 IT_PROG          4800
+                      103            60
+
+        106 Valli                Pataballa
+VPATABAL                  590.423.4560         05-FEB-98 IT_PROG          4800
+                      103            60
+
+        107 Diana                Lorentz
+DLORENTZ                  590.423.5567         07-FEB-99 IT_PROG          4200
+                      103            60
+
+        108 Nancy                Greenberg
+NGREENBE                  515.124.4569         17-AUG-94 FI_MGR          12000
+                      101           100
+
+        109 Daniel               Faviet
+DFAVIET                   515.124.4169         16-AUG-94 FI_ACCOUNT       9000
+                      108           100
+
+        110 John                 Chen
+JCHEN                     515.124.4269         28-SEP-97 FI_ACCOUNT       8200
+                      108           100
+
+        111 Ismael               Sciarra
+ISCIARRA                  515.124.4369         30-SEP-97 FI_ACCOUNT       7700
+                      108           100
+
+        112 Jose Manuel          Urman
+JMURMAN                   515.124.4469         07-MAR-98 FI_ACCOUNT       7800
+                      108           100
+
+        113 Luis                 Popp
+LPOPP                     515.124.4567         07-DEC-99 FI_ACCOUNT       6900
+                      108           100
+
+        114 Den                  Raphaely
+DRAPHEAL                  515.127.4561         07-DEC-94 PU_MAN          11000
+                      100            30
+
+        115 Alexander            Khoo
+AKHOO                     515.127.4562         18-MAY-95 PU_CLERK         3100
+                      114            30
+
+        116 Shelli               Baida
+SBAIDA                    515.127.4563         24-DEC-97 PU_CLERK         2900
+                      114            30
+
+        117 Sigal                Tobias
+STOBIAS                   515.127.4564         24-JUL-97 PU_CLERK         2800
+                      114            30
+
+        118 Guy                  Himuro
+GHIMURO                   515.127.4565         15-NOV-98 PU_CLERK         2600
+                      114            30
+
+        119 Karen                Colmenares
+KCOLMENA                  515.127.4566         10-AUG-99 PU_CLERK         2500
+                      114            30
+
+        120 Matthew              Weiss
+MWEISS                    650.123.1234         18-JUL-96 ST_MAN           8000
+                      100            50
+
+        121 Adam                 Fripp
+AFRIPP                    650.123.2234         10-APR-97 ST_MAN           8200
+                      100            50
+
+        122 Payam                Kaufling
+PKAUFLIN                  650.123.3234         01-MAY-95 ST_MAN           7900
+                      100            50
+
+        123 Shanta               Vollman
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME
+----------- -------------------- -------------------------
+EMAIL                     PHONE_NUMBER         HIRE_DATE JOB_ID         SALARY
+------------------------- -------------------- --------- ---------- ----------
+COMMISSION_PCT MANAGER_ID DEPARTMENT_ID
+-------------- ---------- -------------
+SVOLLMAN                  650.123.4234         10-OCT-97 ST_MAN           6500
+                      100            50
+
+        124 Kevin                Mourgos
+KMOURGOS                  650.123.5234         16-NOV-99 ST_MAN           5800
+                      100            50
+
+        125 Julia                Nayer
+JNAYER                    650.124.1214         16-JUL-97 ST_CLERK         3200
+                      120            50
+
+        126 Irene                Mikkilineni
+IMIKKILI                  650.124.1224         28-SEP-98 ST_CLERK         2700
+                      120            50
+
+        127 James                Landry
+JLANDRY                   650.124.1334         14-JAN-99 ST_CLERK         2400
+                      120            50
+
+        128 Steven               Markle
+SMARKLE                   650.124.1434         08-MAR-00 ST_CLERK         2200
+                      120            50
+
+        129 Laura                Bissot
+LBISSOT                   650.124.5234         20-AUG-97 ST_CLERK         3300
+                      121            50
+
+        130 Mozhe                Atkinson
+MATKINSO                  650.124.6234         30-OCT-97 ST_CLERK         2800
+                      121            50
+
+        131 James                Marlow
+JAMRLOW                   650.124.7234         16-FEB-97 ST_CLERK         2500
+                      121            50
+
+        132 TJ                   Olson
+TJOLSON                   650.124.8234         10-APR-99 ST_CLERK         2100
+                      121            50
+
+        133 Jason                Mallin
+JMALLIN                   650.127.1934         14-JUN-96 ST_CLERK         3300
+                      122            50
+
+        134 Michael              Rogers
+MROGERS                   650.127.1834         26-AUG-98 ST_CLERK         2900
+                      122            50
+
+        135 Ki                   Gee
+KGEE                      650.127.1734         12-DEC-99 ST_CLERK         2400
+                      122            50
+
+        136 Hazel                Philtanker
+HPHILTAN                  650.127.1634         06-FEB-00 ST_CLERK         2200
+                      122            50
+
+        137 Renske               Ladwig
+RLADWIG                   650.121.1234         14-JUL-95 ST_CLERK         3600
+                      123            50
+
+        138 Stephen              Stiles
+SSTILES                   650.121.2034         26-OCT-97 ST_CLERK         3200
+                      123            50
+
+        139 John                 Seo
+JSEO                      650.121.2019         12-FEB-98 ST_CLERK         2700
+                      123            50
+
+        140 Joshua               Patel
+JPATEL                    650.121.1834         06-APR-98 ST_CLERK         2500
+                      123            50
+
+        141 Trenna               Rajs
+TRAJS                     650.121.8009         17-OCT-95 ST_CLERK         3500
+                      124            50
+
+        142 Curtis               Davies
+CDAVIES                   650.121.2994         29-JAN-97 ST_CLERK         3100
+                      124            50
+
+        143 Randall              Matos
+RMATOS                    650.121.2874         15-MAR-98 ST_CLERK         2600
+                      124            50
+
+        144 Peter                Vargas
+PVARGAS                   650.121.2004         09-JUL-98 ST_CLERK         2500
+                      124            50
+
+        145 John                 Russell
+JRUSSEL                   011.44.1344.429268   01-OCT-96 SA_MAN          14000
+            .4        100            80
+
+        146 Karen                Partners
+KPARTNER                  011.44.1344.467268   05-JAN-97 SA_MAN          13500
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME
+----------- -------------------- -------------------------
+EMAIL                     PHONE_NUMBER         HIRE_DATE JOB_ID         SALARY
+------------------------- -------------------- --------- ---------- ----------
+COMMISSION_PCT MANAGER_ID DEPARTMENT_ID
+-------------- ---------- -------------
+            .3        100            80
+
+        147 Alberto              Errazuriz
+AERRAZUR                  011.44.1344.429278   10-MAR-97 SA_MAN          12000
+            .3        100            80
+
+        148 Gerald               Cambrault
+GCAMBRAU                  011.44.1344.619268   15-OCT-99 SA_MAN          11000
+            .3        100            80
+
+        149 Eleni                Zlotkey
+EZLOTKEY                  011.44.1344.429018   29-JAN-00 SA_MAN          10500
+            .2        100            80
+
+        150 Peter                Tucker
+PTUCKER                   011.44.1344.129268   30-JAN-97 SA_REP          10000
+            .3        145            80
+
+        151 David                Bernstein
+DBERNSTE                  011.44.1344.345268   24-MAR-97 SA_REP           9500
+           .25        145            80
+
+        152 Peter                Hall
+PHALL                     011.44.1344.478968   20-AUG-97 SA_REP           9000
+           .25        145            80
+
+        153 Christopher          Olsen
+COLSEN                    011.44.1344.498718   30-MAR-98 SA_REP           8000
+            .2        145            80
+
+        154 Nanette              Cambrault
+NCAMBRAU                  011.44.1344.987668   09-DEC-98 SA_REP           7500
+            .2        145            80
+
+        155 Oliver               Tuvault
+OTUVAULT                  011.44.1344.486508   23-NOV-99 SA_REP           7000
+           .15        145            80
+
+        156 Janette              King
+JKING                     011.44.1345.429268   30-JAN-96 SA_REP          10000
+           .35        146            80
+
+        157 Patrick              Sully
+PSULLY                    011.44.1345.929268   04-MAR-96 SA_REP           9500
+           .35        146            80
+
+        158 Allan                McEwen
+AMCEWEN                   011.44.1345.829268   01-AUG-96 SA_REP           9000
+           .35        146            80
+
+        159 Lindsey              Smith
+LSMITH                    011.44.1345.729268   10-MAR-97 SA_REP           8000
+            .3        146            80
+
+        160 Louise               Doran
+LDORAN                    011.44.1345.629268   15-DEC-97 SA_REP           7500
+            .3        146            80
+
+        161 Sarath               Sewall
+SSEWALL                   011.44.1345.529268   03-NOV-98 SA_REP           7000
+           .25        146            80
+
+        162 Clara                Vishney
+CVISHNEY                  011.44.1346.129268   11-NOV-97 SA_REP          10500
+           .25        147            80
+
+        163 Danielle             Greene
+DGREENE                   011.44.1346.229268   19-MAR-99 SA_REP           9500
+           .15        147            80
+
+        164 Mattea               Marvins
+MMARVINS                  011.44.1346.329268   24-JAN-00 SA_REP           7200
+            .1        147            80
+
+        165 David                Lee
+DLEE                      011.44.1346.529268   23-FEB-00 SA_REP           6800
+            .1        147            80
+
+        166 Sundar               Ande
+SANDE                     011.44.1346.629268   24-MAR-00 SA_REP           6400
+            .1        147            80
+
+        167 Amit                 Banda
+ABANDA                    011.44.1346.729268   21-APR-00 SA_REP           6200
+            .1        147            80
+
+        168 Lisa                 Ozer
+LOZER                     011.44.1343.929268   11-MAR-97 SA_REP          11500
+           .25        148            80
+
+        169 Harrison             Bloom
+HBLOOM                    011.44.1343.829268   23-MAR-98 SA_REP          10000
+            .2        148            80
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME
+----------- -------------------- -------------------------
+EMAIL                     PHONE_NUMBER         HIRE_DATE JOB_ID         SALARY
+------------------------- -------------------- --------- ---------- ----------
+COMMISSION_PCT MANAGER_ID DEPARTMENT_ID
+-------------- ---------- -------------
+
+        170 Tayler               Fox
+TFOX                      011.44.1343.729268   24-JAN-98 SA_REP           9600
+            .2        148            80
+
+        171 William              Smith
+WSMITH                    011.44.1343.629268   23-FEB-99 SA_REP           7400
+           .15        148            80
+
+        172 Elizabeth            Bates
+EBATES                    011.44.1343.529268   24-MAR-99 SA_REP           7300
+           .15        148            80
+
+        173 Sundita              Kumar
+SKUMAR                    011.44.1343.329268   21-APR-00 SA_REP           6100
+            .1        148            80
+
+        174 Ellen                Abel
+EABEL                     011.44.1644.429267   11-MAY-96 SA_REP          11000
+            .3        149            80
+
+        175 Alyssa               Hutton
+AHUTTON                   011.44.1644.429266   19-MAR-97 SA_REP           8800
+           .25        149            80
+
+        176 Jonathon             Taylor
+JTAYLOR                   011.44.1644.429265   24-MAR-98 SA_REP           8600
+            .2        149            80
+
+        177 Jack                 Livingston
+JLIVINGS                  011.44.1644.429264   23-APR-98 SA_REP           8400
+            .2        149            80
+
+        178 Kimberely            Grant
+KGRANT                    011.44.1644.429263   24-MAY-99 SA_REP           7000
+           .15        149
+
+        179 Charles              Johnson
+CJOHNSON                  011.44.1644.429262   04-JAN-00 SA_REP           6200
+            .1        149            80
+
+        180 Winston              Taylor
+WTAYLOR                   650.507.9876         24-JAN-98 SH_CLERK         3200
+                      120            50
+
+        181 Jean                 Fleaur
+JFLEAUR                   650.507.9877         23-FEB-98 SH_CLERK         3100
+                      120            50
+
+        182 Martha               Sullivan
+MSULLIVA                  650.507.9878         21-JUN-99 SH_CLERK         2500
+                      120            50
+
+        183 Girard               Geoni
+GGEONI                    650.507.9879         03-FEB-00 SH_CLERK         2800
+                      120            50
+
+        184 Nandita              Sarchand
+NSARCHAN                  650.509.1876         27-JAN-96 SH_CLERK         4200
+                      121            50
+
+        185 Alexis               Bull
+ABULL                     650.509.2876         20-FEB-97 SH_CLERK         4100
+                      121            50
+
+        186 Julia                Dellinger
+JDELLING                  650.509.3876         24-JUN-98 SH_CLERK         3400
+                      121            50
+
+        187 Anthony              Cabrio
+ACABRIO                   650.509.4876         07-FEB-99 SH_CLERK         3000
+                      121            50
+
+        188 Kelly                Chung
+KCHUNG                    650.505.1876         14-JUN-97 SH_CLERK         3800
+                      122            50
+
+        189 Jennifer             Dilly
+JDILLY                    650.505.2876         13-AUG-97 SH_CLERK         3600
+                      122            50
+
+        190 Timothy              Gates
+TGATES                    650.505.3876         11-JUL-98 SH_CLERK         2900
+                      122            50
+
+        191 Randall              Perkins
+RPERKINS                  650.505.4876         19-DEC-99 SH_CLERK         2500
+                      122            50
+
+        192 Sarah                Bell
+SBELL                     650.501.1876         04-FEB-96 SH_CLERK         4000
+                      123            50
+
+
+EMPLOYEE_ID FIRST_NAME           LAST_NAME
+----------- -------------------- -------------------------
+EMAIL                     PHONE_NUMBER         HIRE_DATE JOB_ID         SALARY
+------------------------- -------------------- --------- ---------- ----------
+COMMISSION_PCT MANAGER_ID DEPARTMENT_ID
+-------------- ---------- -------------
+        193 Britney              Everett
+BEVERETT                  650.501.2876         03-MAR-97 SH_CLERK         3900
+                      123            50
+
+        194 Samuel               McCain
+SMCCAIN                   650.501.3876         01-JUL-98 SH_CLERK         3200
+                      123            50
+
+        195 Vance                Jones
+VJONES                    650.501.4876         17-MAR-99 SH_CLERK         2800
+                      123            50
+
+        196 Alana                Walsh
+AWALSH                    650.507.9811         24-APR-98 SH_CLERK         3100
+                      124            50
+
+        197 Kevin                Feeney
+KFEENEY                   650.507.9822         23-MAY-98 SH_CLERK         3000
+                      124            50
+
+        198 Donald               OConnell
+DOCONNEL                  650.507.9833         21-JUN-99 SH_CLERK         2600
+                      124            50
+
+        199 Douglas              Grant
+DGRANT                    650.507.9844         13-JAN-00 SH_CLERK         2600
+                      124            50
+
+        200 Jennifer             Whalen
+JWHALEN                   515.123.4444         17-SEP-87 AD_ASST          4400
+                      101            10
+
+        201 Michael              Hartstein
+MHARTSTE                  515.123.5555         17-FEB-96 MK_MAN          13000
+                      100            20
+
+        202 Pat                  Fay
+PFAY                      603.123.6666         17-AUG-97 MK_REP           6000
+                      201            20
+
+        203 Susan                Mavris
+SMAVRIS                   515.123.7777         07-JUN-94 HR_REP           6500
+                      101            40
+
+        204 Hermann              Baer
+HBAER                     515.123.8888         07-JUN-94 PR_REP          10000
+                      101            70
+
+        205 Shelley              Higgins
+SHIGGINS                  515.123.8080         07-JUN-94 AC_MGR          12000
+                      101           110
+
+        206 William              Gietz
+WGIETZ                    515.123.8181         07-JUN-94 AC_ACCOUNT       8300
+                      205           110
+
+
+107 rows selected.
+
+SQL> select * from jobs;
+
+JOB_ID     JOB_TITLE                           MIN_SALARY MAX_SALARY
+---------- ----------------------------------- ---------- ----------
+AD_PRES    President                                20000      40000
+AD_VP      Administration Vice President            15000      30000
+AD_ASST    Administration Assistant                  3000       6000
+FI_MGR     Finance Manager                           8200      16000
+FI_ACCOUNT Accountant                                4200       9000
+AC_MGR     Accounting Manager                        8200      16000
+AC_ACCOUNT Public Accountant                         4200       9000
+SA_MAN     Sales Manager                            10000      20000
+SA_REP     Sales Representative                      6000      12000
+PU_MAN     Purchasing Manager                        8000      15000
+PU_CLERK   Purchasing Clerk                          2500       5500
+ST_MAN     Stock Manager                             5500       8500
+ST_CLERK   Stock Clerk                               2000       5000
+SH_CLERK   Shipping Clerk                            2500       5500
+IT_PROG    Programmer                                4000      10000
+MK_MAN     Marketing Manager                         9000      15000
+MK_REP     Marketing Representative                  4000       9000
+HR_REP     Human Resources Representative            4000       9000
+PR_REP     Public Relations Representative           4500      10500
+
+19 rows selected.
+
+SQL> select * from jobs where job_title = 'President';
+
+JOB_ID     JOB_TITLE                           MIN_SALARY MAX_SALARY
+---------- ----------------------------------- ---------- ----------
+AD_PRES    President                                20000      40000
+
+1 row selected.
+
+SQL> create table samp (regno number, name varchar(15));
+
+Table created.
+
+SQL> desc samp
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ REGNO                                              NUMBER
+ NAME                                               VARCHAR2(15)
+
+SQL> insert into samp values(&No,'&name');
+Enter value for no: 101
+Enter value for name: ashvath
+
+1 row created.
+
+SQL> /
+Enter value for no: 102
+Enter value for name: kevin
+
+1 row created.
+
+SQL> select * from samp;
+
+     REGNO NAME
+---------- ---------------
+       101 ashvath
+       102 kevin
+
+2 rows selected.
+
+SQL> desc employees;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPLOYEE_ID                               NOT NULL NUMBER(6)
+ FIRST_NAME                                         VARCHAR2(20)
+ LAST_NAME                                 NOT NULL VARCHAR2(25)
+ EMAIL                                     NOT NULL VARCHAR2(25)
+ PHONE_NUMBER                                       VARCHAR2(20)
+ HIRE_DATE                                 NOT NULL DATE
+ JOB_ID                                    NOT NULL VARCHAR2(10)
+ SALARY                                             NUMBER(8,2)
+ COMMISSION_PCT                                     NUMBER(2,2)
+ MANAGER_ID                                         NUMBER(6)
+ DEPARTMENT_ID                                      NUMBER(4)
+
+SQL> select first_name, employee_id from employees;
+
+FIRST_NAME           EMPLOYEE_ID
+-------------------- -----------
+Steven                       100
+Neena                        101
+Lex                          102
+Alexander                    103
+Bruce                        104
+David                        105
+Valli                        106
+Diana                        107
+Nancy                        108
+Daniel                       109
+John                         110
+Ismael                       111
+Jose Manuel                  112
+Luis                         113
+Den                          114
+Alexander                    115
+Shelli                       116
+Sigal                        117
+Guy                          118
+Karen                        119
+Matthew                      120
+Adam                         121
+Payam                        122
+Shanta                       123
+Kevin                        124
+Julia                        125
+Irene                        126
+James                        127
+Steven                       128
+Laura                        129
+Mozhe                        130
+James                        131
+TJ                           132
+Jason                        133
+Michael                      134
+Ki                           135
+Hazel                        136
+Renske                       137
+Stephen                      138
+John                         139
+Joshua                       140
+Trenna                       141
+Curtis                       142
+Randall                      143
+Peter                        144
+John                         145
+Karen                        146
+Alberto                      147
+Gerald                       148
+Eleni                        149
+Peter                        150
+David                        151
+Peter                        152
+Christopher                  153
+Nanette                      154
+Oliver                       155
+Janette                      156
+Patrick                      157
+Allan                        158
+Lindsey                      159
+Louise                       160
+Sarath                       161
+Clara                        162
+Danielle                     163
+Mattea                       164
+David                        165
+Sundar                       166
+Amit                         167
+Lisa                         168
+Harrison                     169
+Tayler                       170
+William                      171
+Elizabeth                    172
+Sundita                      173
+Ellen                        174
+Alyssa                       175
+Jonathon                     176
+Jack                         177
+Kimberely                    178
+Charles                      179
+Winston                      180
+Jean                         181
+Martha                       182
+Girard                       183
+Nandita                      184
+Alexis                       185
+Julia                        186
+Anthony                      187
+Kelly                        188
+Jennifer                     189
+Timothy                      190
+Randall                      191
+Sarah                        192
+Britney                      193
+Samuel                       194
+Vance                        195
+Alana                        196
+
+FIRST_NAME           EMPLOYEE_ID
+-------------------- -----------
+Kevin                        197
+Donald                       198
+Douglas                      199
+Jennifer                     200
+Michael                      201
+Pat                          202
+Susan                        203
+Hermann                      204
+Shelley                      205
+William                      206
+
+107 rows selected.
+
+SQL> select first_name, employee_id, salary from employees;
+
+FIRST_NAME           EMPLOYEE_ID     SALARY
+-------------------- ----------- ----------
+Steven                       100      24000
+Neena                        101      17000
+Lex                          102      17000
+Alexander                    103       9000
+Bruce                        104       6000
+David                        105       4800
+Valli                        106       4800
+Diana                        107       4200
+Nancy                        108      12000
+Daniel                       109       9000
+John                         110       8200
+Ismael                       111       7700
+Jose Manuel                  112       7800
+Luis                         113       6900
+Den                          114      11000
+Alexander                    115       3100
+Shelli                       116       2900
+Sigal                        117       2800
+Guy                          118       2600
+Karen                        119       2500
+Matthew                      120       8000
+Adam                         121       8200
+Payam                        122       7900
+Shanta                       123       6500
+Kevin                        124       5800
+Julia                        125       3200
+Irene                        126       2700
+James                        127       2400
+Steven                       128       2200
+Laura                        129       3300
+Mozhe                        130       2800
+James                        131       2500
+TJ                           132       2100
+Jason                        133       3300
+Michael                      134       2900
+Ki                           135       2400
+Hazel                        136       2200
+Renske                       137       3600
+Stephen                      138       3200
+John                         139       2700
+Joshua                       140       2500
+Trenna                       141       3500
+Curtis                       142       3100
+Randall                      143       2600
+Peter                        144       2500
+John                         145      14000
+Karen                        146      13500
+Alberto                      147      12000
+Gerald                       148      11000
+Eleni                        149      10500
+Peter                        150      10000
+David                        151       9500
+Peter                        152       9000
+Christopher                  153       8000
+Nanette                      154       7500
+Oliver                       155       7000
+Janette                      156      10000
+Patrick                      157       9500
+Allan                        158       9000
+Lindsey                      159       8000
+Louise                       160       7500
+Sarath                       161       7000
+Clara                        162      10500
+Danielle                     163       9500
+Mattea                       164       7200
+David                        165       6800
+Sundar                       166       6400
+Amit                         167       6200
+Lisa                         168      11500
+Harrison                     169      10000
+Tayler                       170       9600
+William                      171       7400
+Elizabeth                    172       7300
+Sundita                      173       6100
+Ellen                        174      11000
+Alyssa                       175       8800
+Jonathon                     176       8600
+Jack                         177       8400
+Kimberely                    178       7000
+Charles                      179       6200
+Winston                      180       3200
+Jean                         181       3100
+Martha                       182       2500
+Girard                       183       2800
+Nandita                      184       4200
+Alexis                       185       4100
+Julia                        186       3400
+Anthony                      187       3000
+Kelly                        188       3800
+Jennifer                     189       3600
+Timothy                      190       2900
+Randall                      191       2500
+Sarah                        192       4000
+Britney                      193       3900
+Samuel                       194       3200
+Vance                        195       2800
+Alana                        196       3100
+
+FIRST_NAME           EMPLOYEE_ID     SALARY
+-------------------- ----------- ----------
+Kevin                        197       3000
+Donald                       198       2600
+Douglas                      199       2600
+Jennifer                     200       4400
+Michael                      201      13000
+Pat                          202       6000
+Susan                        203       6500
+Hermann                      204      10000
+Shelley                      205      12000
+William                      206       8300
+
+107 rows selected.
+
+SQL> select &c1,&c2,&c3 from employees;
+Enter value for c1: salary
+Enter value for c2: last_name
+Enter value for c3: job_id
+
+    SALARY LAST_NAME                 JOB_ID
+---------- ------------------------- ----------
+     24000 King                      AD_PRES
+     17000 Kochhar                   AD_VP
+     17000 De Haan                   AD_VP
+      9000 Hunold                    IT_PROG
+      6000 Ernst                     IT_PROG
+      4800 Austin                    IT_PROG
+      4800 Pataballa                 IT_PROG
+      4200 Lorentz                   IT_PROG
+     12000 Greenberg                 FI_MGR
+      9000 Faviet                    FI_ACCOUNT
+      8200 Chen                      FI_ACCOUNT
+      7700 Sciarra                   FI_ACCOUNT
+      7800 Urman                     FI_ACCOUNT
+      6900 Popp                      FI_ACCOUNT
+     11000 Raphaely                  PU_MAN
+      3100 Khoo                      PU_CLERK
+      2900 Baida                     PU_CLERK
+      2800 Tobias                    PU_CLERK
+      2600 Himuro                    PU_CLERK
+      2500 Colmenares                PU_CLERK
+      8000 Weiss                     ST_MAN
+      8200 Fripp                     ST_MAN
+      7900 Kaufling                  ST_MAN
+      6500 Vollman                   ST_MAN
+      5800 Mourgos                   ST_MAN
+      3200 Nayer                     ST_CLERK
+      2700 Mikkilineni               ST_CLERK
+      2400 Landry                    ST_CLERK
+      2200 Markle                    ST_CLERK
+      3300 Bissot                    ST_CLERK
+      2800 Atkinson                  ST_CLERK
+      2500 Marlow                    ST_CLERK
+      2100 Olson                     ST_CLERK
+      3300 Mallin                    ST_CLERK
+      2900 Rogers                    ST_CLERK
+      2400 Gee                       ST_CLERK
+      2200 Philtanker                ST_CLERK
+      3600 Ladwig                    ST_CLERK
+      3200 Stiles                    ST_CLERK
+      2700 Seo                       ST_CLERK
+      2500 Patel                     ST_CLERK
+      3500 Rajs                      ST_CLERK
+      3100 Davies                    ST_CLERK
+      2600 Matos                     ST_CLERK
+      2500 Vargas                    ST_CLERK
+     14000 Russell                   SA_MAN
+     13500 Partners                  SA_MAN
+     12000 Errazuriz                 SA_MAN
+     11000 Cambrault                 SA_MAN
+     10500 Zlotkey                   SA_MAN
+     10000 Tucker                    SA_REP
+      9500 Bernstein                 SA_REP
+      9000 Hall                      SA_REP
+      8000 Olsen                     SA_REP
+      7500 Cambrault                 SA_REP
+      7000 Tuvault                   SA_REP
+     10000 King                      SA_REP
+      9500 Sully                     SA_REP
+      9000 McEwen                    SA_REP
+      8000 Smith                     SA_REP
+      7500 Doran                     SA_REP
+      7000 Sewall                    SA_REP
+     10500 Vishney                   SA_REP
+      9500 Greene                    SA_REP
+      7200 Marvins                   SA_REP
+      6800 Lee                       SA_REP
+      6400 Ande                      SA_REP
+      6200 Banda                     SA_REP
+     11500 Ozer                      SA_REP
+     10000 Bloom                     SA_REP
+      9600 Fox                       SA_REP
+      7400 Smith                     SA_REP
+      7300 Bates                     SA_REP
+      6100 Kumar                     SA_REP
+     11000 Abel                      SA_REP
+      8800 Hutton                    SA_REP
+      8600 Taylor                    SA_REP
+      8400 Livingston                SA_REP
+      7000 Grant                     SA_REP
+      6200 Johnson                   SA_REP
+      3200 Taylor                    SH_CLERK
+      3100 Fleaur                    SH_CLERK
+      2500 Sullivan                  SH_CLERK
+      2800 Geoni                     SH_CLERK
+      4200 Sarchand                  SH_CLERK
+      4100 Bull                      SH_CLERK
+      3400 Dellinger                 SH_CLERK
+      3000 Cabrio                    SH_CLERK
+      3800 Chung                     SH_CLERK
+      3600 Dilly                     SH_CLERK
+      2900 Gates                     SH_CLERK
+      2500 Perkins                   SH_CLERK
+      4000 Bell                      SH_CLERK
+      3900 Everett                   SH_CLERK
+      3200 McCain                    SH_CLERK
+      2800 Jones                     SH_CLERK
+      3100 Walsh                     SH_CLERK
+
+    SALARY LAST_NAME                 JOB_ID
+---------- ------------------------- ----------
+      3000 Feeney                    SH_CLERK
+      2600 OConnell                  SH_CLERK
+      2600 Grant                     SH_CLERK
+      4400 Whalen                    AD_ASST
+     13000 Hartstein                 MK_MAN
+      6000 Fay                       MK_REP
+      6500 Mavris                    HR_REP
+     10000 Baer                      PR_REP
+     12000 Higgins                   AC_MGR
+      8300 Gietz                     AC_ACCOUNT
+
+107 rows selected.
+
+SQL> select first_name, employee_id, salary from employees where salary>10000;
+
+FIRST_NAME           EMPLOYEE_ID     SALARY
+-------------------- ----------- ----------
+Steven                       100      24000
+Neena                        101      17000
+Lex                          102      17000
+Nancy                        108      12000
+Den                          114      11000
+John                         145      14000
+Karen                        146      13500
+Alberto                      147      12000
+Gerald                       148      11000
+Eleni                        149      10500
+Clara                        162      10500
+Lisa                         168      11500
+Ellen                        174      11000
+Michael                      201      13000
+Shelley                      205      12000
+
+15 rows selected.
+
+SQL> select first_name, employee_id, salary from employees where first_name='micheal';
+
+no rows selected
+
+SQL> select first_name, employee_id, salary from employees where first_name='Micheal';
+
+no rows selected
+
+SQL> select first_name, employee_id, salary from employees where first_name='Michael';
+
+FIRST_NAME           EMPLOYEE_ID     SALARY
+-------------------- ----------- ----------
+Michael                      134       2900
+Michael                      201      13000
+
+2 rows selected.
+
+SQL> select first_name,lower(first_name) from employees;
+
+FIRST_NAME           LOWER(FIRST_NAME)
+-------------------- --------------------
+Ellen                ellen
+Sundar               sundar
+Mozhe                mozhe
+David                david
+Hermann              hermann
+Shelli               shelli
+Amit                 amit
+Elizabeth            elizabeth
+Sarah                sarah
+David                david
+Laura                laura
+Harrison             harrison
+Alexis               alexis
+Anthony              anthony
+Gerald               gerald
+Nanette              nanette
+John                 john
+Kelly                kelly
+Karen                karen
+Curtis               curtis
+Lex                  lex
+Julia                julia
+Jennifer             jennifer
+Louise               louise
+Bruce                bruce
+Alberto              alberto
+Britney              britney
+Daniel               daniel
+Pat                  pat
+Kevin                kevin
+Jean                 jean
+Tayler               tayler
+Adam                 adam
+Timothy              timothy
+Ki                   ki
+Girard               girard
+William              william
+Douglas              douglas
+Kimberely            kimberely
+Nancy                nancy
+Danielle             danielle
+Peter                peter
+Michael              michael
+Shelley              shelley
+Guy                  guy
+Alexander            alexander
+Alyssa               alyssa
+Charles              charles
+Vance                vance
+Payam                payam
+Alexander            alexander
+Janette              janette
+Steven               steven
+Neena                neena
+Sundita              sundita
+Renske               renske
+James                james
+David                david
+Jack                 jack
+Diana                diana
+Jason                jason
+Steven               steven
+James                james
+Mattea               mattea
+Randall              randall
+Susan                susan
+Samuel               samuel
+Allan                allan
+Irene                irene
+Kevin                kevin
+Julia                julia
+Donald               donald
+Christopher          christopher
+TJ                   tj
+Lisa                 lisa
+Karen                karen
+Valli                valli
+Joshua               joshua
+Randall              randall
+Hazel                hazel
+Luis                 luis
+Trenna               trenna
+Den                  den
+Michael              michael
+John                 john
+Nandita              nandita
+Ismael               ismael
+John                 john
+Sarath               sarath
+Lindsey              lindsey
+William              william
+Stephen              stephen
+Martha               martha
+Patrick              patrick
+Jonathon             jonathon
+Winston              winston
+Sigal                sigal
+
+FIRST_NAME           LOWER(FIRST_NAME)
+-------------------- --------------------
+Peter                peter
+Oliver               oliver
+Jose Manuel          jose manuel
+Peter                peter
+Clara                clara
+Shanta               shanta
+Alana                alana
+Matthew              matthew
+Jennifer             jennifer
+Eleni                eleni
+
+107 rows selected.
+
+SQL> select first_name,lower(first_name),upper(first_name),initcap(first_name) from employees;
+
+FIRST_NAME           LOWER(FIRST_NAME)    UPPER(FIRST_NAME)
+-------------------- -------------------- --------------------
+INITCAP(FIRST_NAME)
+--------------------
+Ellen                ellen                ELLEN
+Ellen
+
+Sundar               sundar               SUNDAR
+Sundar
+
+Mozhe                mozhe                MOZHE
+Mozhe
+
+David                david                DAVID
+David
+
+Hermann              hermann              HERMANN
+Hermann
+
+Shelli               shelli               SHELLI
+Shelli
+
+Amit                 amit                 AMIT
+Amit
+
+Elizabeth            elizabeth            ELIZABETH
+Elizabeth
+
+Sarah                sarah                SARAH
+Sarah
+
+David                david                DAVID
+David
+
+Laura                laura                LAURA
+Laura
+
+Harrison             harrison             HARRISON
+Harrison
+
+Alexis               alexis               ALEXIS
+Alexis
+
+Anthony              anthony              ANTHONY
+Anthony
+
+Gerald               gerald               GERALD
+Gerald
+
+Nanette              nanette              NANETTE
+Nanette
+
+John                 john                 JOHN
+John
+
+Kelly                kelly                KELLY
+Kelly
+
+Karen                karen                KAREN
+Karen
+
+Curtis               curtis               CURTIS
+Curtis
+
+Lex                  lex                  LEX
+Lex
+
+Julia                julia                JULIA
+Julia
+
+Jennifer             jennifer             JENNIFER
+Jennifer
+
+Louise               louise               LOUISE
+Louise
+
+Bruce                bruce                BRUCE
+Bruce
+
+Alberto              alberto              ALBERTO
+Alberto
+
+Britney              britney              BRITNEY
+Britney
+
+Daniel               daniel               DANIEL
+Daniel
+
+Pat                  pat                  PAT
+Pat
+
+Kevin                kevin                KEVIN
+Kevin
+
+Jean                 jean                 JEAN
+Jean
+
+Tayler               tayler               TAYLER
+Tayler
+
+FIRST_NAME           LOWER(FIRST_NAME)    UPPER(FIRST_NAME)
+-------------------- -------------------- --------------------
+INITCAP(FIRST_NAME)
+--------------------
+
+Adam                 adam                 ADAM
+Adam
+
+Timothy              timothy              TIMOTHY
+Timothy
+
+Ki                   ki                   KI
+Ki
+
+Girard               girard               GIRARD
+Girard
+
+William              william              WILLIAM
+William
+
+Douglas              douglas              DOUGLAS
+Douglas
+
+Kimberely            kimberely            KIMBERELY
+Kimberely
+
+Nancy                nancy                NANCY
+Nancy
+
+Danielle             danielle             DANIELLE
+Danielle
+
+Peter                peter                PETER
+Peter
+
+Michael              michael              MICHAEL
+Michael
+
+Shelley              shelley              SHELLEY
+Shelley
+
+Guy                  guy                  GUY
+Guy
+
+Alexander            alexander            ALEXANDER
+Alexander
+
+Alyssa               alyssa               ALYSSA
+Alyssa
+
+Charles              charles              CHARLES
+Charles
+
+Vance                vance                VANCE
+Vance
+
+Payam                payam                PAYAM
+Payam
+
+Alexander            alexander            ALEXANDER
+Alexander
+
+Janette              janette              JANETTE
+Janette
+
+Steven               steven               STEVEN
+Steven
+
+Neena                neena                NEENA
+Neena
+
+Sundita              sundita              SUNDITA
+Sundita
+
+Renske               renske               RENSKE
+Renske
+
+James                james                JAMES
+James
+
+David                david                DAVID
+David
+
+Jack                 jack                 JACK
+Jack
+
+Diana                diana                DIANA
+Diana
+
+Jason                jason                JASON
+Jason
+
+Steven               steven               STEVEN
+Steven
+
+James                james                JAMES
+James
+
+Mattea               mattea               MATTEA
+
+FIRST_NAME           LOWER(FIRST_NAME)    UPPER(FIRST_NAME)
+-------------------- -------------------- --------------------
+INITCAP(FIRST_NAME)
+--------------------
+Mattea
+
+Randall              randall              RANDALL
+Randall
+
+Susan                susan                SUSAN
+Susan
+
+Samuel               samuel               SAMUEL
+Samuel
+
+Allan                allan                ALLAN
+Allan
+
+Irene                irene                IRENE
+Irene
+
+Kevin                kevin                KEVIN
+Kevin
+
+Julia                julia                JULIA
+Julia
+
+Donald               donald               DONALD
+Donald
+
+Christopher          christopher          CHRISTOPHER
+Christopher
+
+TJ                   tj                   TJ
+Tj
+
+Lisa                 lisa                 LISA
+Lisa
+
+Karen                karen                KAREN
+Karen
+
+Valli                valli                VALLI
+Valli
+
+Joshua               joshua               JOSHUA
+Joshua
+
+Randall              randall              RANDALL
+Randall
+
+Hazel                hazel                HAZEL
+Hazel
+
+Luis                 luis                 LUIS
+Luis
+
+Trenna               trenna               TRENNA
+Trenna
+
+Den                  den                  DEN
+Den
+
+Michael              michael              MICHAEL
+Michael
+
+John                 john                 JOHN
+John
+
+Nandita              nandita              NANDITA
+Nandita
+
+Ismael               ismael               ISMAEL
+Ismael
+
+John                 john                 JOHN
+John
+
+Sarath               sarath               SARATH
+Sarath
+
+Lindsey              lindsey              LINDSEY
+Lindsey
+
+William              william              WILLIAM
+William
+
+Stephen              stephen              STEPHEN
+Stephen
+
+Martha               martha               MARTHA
+Martha
+
+Patrick              patrick              PATRICK
+Patrick
+
+Jonathon             jonathon             JONATHON
+Jonathon
+
+
+FIRST_NAME           LOWER(FIRST_NAME)    UPPER(FIRST_NAME)
+-------------------- -------------------- --------------------
+INITCAP(FIRST_NAME)
+--------------------
+Winston              winston              WINSTON
+Winston
+
+Sigal                sigal                SIGAL
+Sigal
+
+Peter                peter                PETER
+Peter
+
+Oliver               oliver               OLIVER
+Oliver
+
+Jose Manuel          jose manuel          JOSE MANUEL
+Jose Manuel
+
+Peter                peter                PETER
+Peter
+
+Clara                clara                CLARA
+Clara
+
+Shanta               shanta               SHANTA
+Shanta
+
+Alana                alana                ALANA
+Alana
+
+Matthew              matthew              MATTHEW
+Matthew
+
+Jennifer             jennifer             JENNIFER
+Jennifer
+
+Eleni                eleni                ELENI
+Eleni
+
+
+107 rows selected.
+
+SQL> set linesize 1500;
+SQL> select first_name,lower(first_name),upper(first_name),initcap(first_name) from employees;
+
+FIRST_NAME           LOWER(FIRST_NAME)    UPPER(FIRST_NAME)    INITCAP(FIRST_NAME)
+-------------------- -------------------- -------------------- --------------------
+Ellen                ellen                ELLEN                Ellen
+Sundar               sundar               SUNDAR               Sundar
+Mozhe                mozhe                MOZHE                Mozhe
+David                david                DAVID                David
+Hermann              hermann              HERMANN              Hermann
+Shelli               shelli               SHELLI               Shelli
+Amit                 amit                 AMIT                 Amit
+Elizabeth            elizabeth            ELIZABETH            Elizabeth
+Sarah                sarah                SARAH                Sarah
+David                david                DAVID                David
+Laura                laura                LAURA                Laura
+Harrison             harrison             HARRISON             Harrison
+Alexis               alexis               ALEXIS               Alexis
+Anthony              anthony              ANTHONY              Anthony
+Gerald               gerald               GERALD               Gerald
+Nanette              nanette              NANETTE              Nanette
+John                 john                 JOHN                 John
+Kelly                kelly                KELLY                Kelly
+Karen                karen                KAREN                Karen
+Curtis               curtis               CURTIS               Curtis
+Lex                  lex                  LEX                  Lex
+Julia                julia                JULIA                Julia
+Jennifer             jennifer             JENNIFER             Jennifer
+Louise               louise               LOUISE               Louise
+Bruce                bruce                BRUCE                Bruce
+Alberto              alberto              ALBERTO              Alberto
+Britney              britney              BRITNEY              Britney
+Daniel               daniel               DANIEL               Daniel
+Pat                  pat                  PAT                  Pat
+Kevin                kevin                KEVIN                Kevin
+Jean                 jean                 JEAN                 Jean
+Tayler               tayler               TAYLER               Tayler
+Adam                 adam                 ADAM                 Adam
+Timothy              timothy              TIMOTHY              Timothy
+Ki                   ki                   KI                   Ki
+Girard               girard               GIRARD               Girard
+William              william              WILLIAM              William
+Douglas              douglas              DOUGLAS              Douglas
+Kimberely            kimberely            KIMBERELY            Kimberely
+Nancy                nancy                NANCY                Nancy
+Danielle             danielle             DANIELLE             Danielle
+Peter                peter                PETER                Peter
+Michael              michael              MICHAEL              Michael
+Shelley              shelley              SHELLEY              Shelley
+Guy                  guy                  GUY                  Guy
+Alexander            alexander            ALEXANDER            Alexander
+Alyssa               alyssa               ALYSSA               Alyssa
+Charles              charles              CHARLES              Charles
+Vance                vance                VANCE                Vance
+Payam                payam                PAYAM                Payam
+Alexander            alexander            ALEXANDER            Alexander
+Janette              janette              JANETTE              Janette
+Steven               steven               STEVEN               Steven
+Neena                neena                NEENA                Neena
+Sundita              sundita              SUNDITA              Sundita
+Renske               renske               RENSKE               Renske
+James                james                JAMES                James
+David                david                DAVID                David
+Jack                 jack                 JACK                 Jack
+Diana                diana                DIANA                Diana
+Jason                jason                JASON                Jason
+Steven               steven               STEVEN               Steven
+James                james                JAMES                James
+Mattea               mattea               MATTEA               Mattea
+Randall              randall              RANDALL              Randall
+Susan                susan                SUSAN                Susan
+Samuel               samuel               SAMUEL               Samuel
+Allan                allan                ALLAN                Allan
+Irene                irene                IRENE                Irene
+Kevin                kevin                KEVIN                Kevin
+Julia                julia                JULIA                Julia
+Donald               donald               DONALD               Donald
+Christopher          christopher          CHRISTOPHER          Christopher
+TJ                   tj                   TJ                   Tj
+Lisa                 lisa                 LISA                 Lisa
+Karen                karen                KAREN                Karen
+Valli                valli                VALLI                Valli
+Joshua               joshua               JOSHUA               Joshua
+Randall              randall              RANDALL              Randall
+Hazel                hazel                HAZEL                Hazel
+Luis                 luis                 LUIS                 Luis
+Trenna               trenna               TRENNA               Trenna
+Den                  den                  DEN                  Den
+Michael              michael              MICHAEL              Michael
+John                 john                 JOHN                 John
+Nandita              nandita              NANDITA              Nandita
+Ismael               ismael               ISMAEL               Ismael
+John                 john                 JOHN                 John
+Sarath               sarath               SARATH               Sarath
+Lindsey              lindsey              LINDSEY              Lindsey
+William              william              WILLIAM              William
+Stephen              stephen              STEPHEN              Stephen
+Martha               martha               MARTHA               Martha
+Patrick              patrick              PATRICK              Patrick
+Jonathon             jonathon             JONATHON             Jonathon
+Winston              winston              WINSTON              Winston
+Sigal                sigal                SIGAL                Sigal
+
+FIRST_NAME           LOWER(FIRST_NAME)    UPPER(FIRST_NAME)    INITCAP(FIRST_NAME)
+-------------------- -------------------- -------------------- --------------------
+Peter                peter                PETER                Peter
+Oliver               oliver               OLIVER               Oliver
+Jose Manuel          jose manuel          JOSE MANUEL          Jose Manuel
+Peter                peter                PETER                Peter
+Clara                clara                CLARA                Clara
+Shanta               shanta               SHANTA               Shanta
+Alana                alana                ALANA                Alana
+Matthew              matthew              MATTHEW              Matthew
+Jennifer             jennifer             JENNIFER             Jennifer
+Eleni                eleni                ELENI                Eleni
+
+107 rows selected.
+
+SQL> select employee_id,first_name from employees where lower(first_name)='michael';
+
+EMPLOYEE_ID FIRST_NAME
+----------- --------------------
+        134 Michael
+        201 Michael
+
+2 rows selected.
+
+SQL> select first_name,salary from employees order by salary;
+
+FIRST_NAME               SALARY
+-------------------- ----------
+TJ                         2100
+Steven                     2200
+Hazel                      2200
+James                      2400
+Ki                         2400
+Karen                      2500
+James                      2500
+Joshua                     2500
+Peter                      2500
+Martha                     2500
+Randall                    2500
+Guy                        2600
+Randall                    2600
+Donald                     2600
+Douglas                    2600
+Irene                      2700
+John                       2700
+Sigal                      2800
+Mozhe                      2800
+Girard                     2800
+Vance                      2800
+Shelli                     2900
+Michael                    2900
+Timothy                    2900
+Anthony                    3000
+Kevin                      3000
+Alexander                  3100
+Curtis                     3100
+Jean                       3100
+Alana                      3100
+Julia                      3200
+Stephen                    3200
+Winston                    3200
+Samuel                     3200
+Laura                      3300
+Jason                      3300
+Julia                      3400
+Trenna                     3500
+Renske                     3600
+Jennifer                   3600
+Kelly                      3800
+Britney                    3900
+Sarah                      4000
+Alexis                     4100
+Diana                      4200
+Nandita                    4200
+Jennifer                   4400
+David                      4800
+Valli                      4800
+Kevin                      5800
+Bruce                      6000
+Pat                        6000
+Sundita                    6100
+Amit                       6200
+Charles                    6200
+Sundar                     6400
+Shanta                     6500
+Susan                      6500
+David                      6800
+Luis                       6900
+Oliver                     7000
+Sarath                     7000
+Kimberely                  7000
+Mattea                     7200
+Elizabeth                  7300
+William                    7400
+Nanette                    7500
+Louise                     7500
+Ismael                     7700
+Jose Manuel                7800
+Payam                      7900
+Matthew                    8000
+Christopher                8000
+Lindsey                    8000
+John                       8200
+Adam                       8200
+William                    8300
+Jack                       8400
+Jonathon                   8600
+Alyssa                     8800
+Alexander                  9000
+Daniel                     9000
+Peter                      9000
+Allan                      9000
+Patrick                    9500
+Danielle                   9500
+David                      9500
+Tayler                     9600
+Hermann                   10000
+Harrison                  10000
+Janette                   10000
+Peter                     10000
+Clara                     10500
+Eleni                     10500
+Gerald                    11000
+Den                       11000
+Ellen                     11000
+
+FIRST_NAME               SALARY
+-------------------- ----------
+Lisa                      11500
+Shelley                   12000
+Nancy                     12000
+Alberto                   12000
+Michael                   13000
+Karen                     13500
+John                      14000
+Lex                       17000
+Neena                     17000
+Steven                    24000
+
+107 rows selected.
+
+SQL> select first_name,salary from employees order by salary asc;
+
+FIRST_NAME               SALARY
+-------------------- ----------
+TJ                         2100
+Steven                     2200
+Hazel                      2200
+James                      2400
+Ki                         2400
+Karen                      2500
+James                      2500
+Joshua                     2500
+Peter                      2500
+Martha                     2500
+Randall                    2500
+Guy                        2600
+Randall                    2600
+Donald                     2600
+Douglas                    2600
+Irene                      2700
+John                       2700
+Sigal                      2800
+Mozhe                      2800
+Girard                     2800
+Vance                      2800
+Shelli                     2900
+Michael                    2900
+Timothy                    2900
+Anthony                    3000
+Kevin                      3000
+Alexander                  3100
+Curtis                     3100
+Jean                       3100
+Alana                      3100
+Julia                      3200
+Stephen                    3200
+Winston                    3200
+Samuel                     3200
+Laura                      3300
+Jason                      3300
+Julia                      3400
+Trenna                     3500
+Renske                     3600
+Jennifer                   3600
+Kelly                      3800
+Britney                    3900
+Sarah                      4000
+Alexis                     4100
+Diana                      4200
+Nandita                    4200
+Jennifer                   4400
+David                      4800
+Valli                      4800
+Kevin                      5800
+Bruce                      6000
+Pat                        6000
+Sundita                    6100
+Amit                       6200
+Charles                    6200
+Sundar                     6400
+Shanta                     6500
+Susan                      6500
+David                      6800
+Luis                       6900
+Oliver                     7000
+Sarath                     7000
+Kimberely                  7000
+Mattea                     7200
+Elizabeth                  7300
+William                    7400
+Nanette                    7500
+Louise                     7500
+Ismael                     7700
+Jose Manuel                7800
+Payam                      7900
+Matthew                    8000
+Christopher                8000
+Lindsey                    8000
+John                       8200
+Adam                       8200
+William                    8300
+Jack                       8400
+Jonathon                   8600
+Alyssa                     8800
+Alexander                  9000
+Daniel                     9000
+Peter                      9000
+Allan                      9000
+Patrick                    9500
+Danielle                   9500
+David                      9500
+Tayler                     9600
+Hermann                   10000
+Harrison                  10000
+Janette                   10000
+Peter                     10000
+Clara                     10500
+Eleni                     10500
+Gerald                    11000
+Den                       11000
+Ellen                     11000
+
+FIRST_NAME               SALARY
+-------------------- ----------
+Lisa                      11500
+Shelley                   12000
+Nancy                     12000
+Alberto                   12000
+Michael                   13000
+Karen                     13500
+John                      14000
+Lex                       17000
+Neena                     17000
+Steven                    24000
+
+107 rows selected.
+
+SQL> select first_name,salary from employees order by salary desc;
+
+FIRST_NAME               SALARY
+-------------------- ----------
+Steven                    24000
+Neena                     17000
+Lex                       17000
+John                      14000
+Karen                     13500
+Michael                   13000
+Nancy                     12000
+Alberto                   12000
+Shelley                   12000
+Lisa                      11500
+Ellen                     11000
+Gerald                    11000
+Den                       11000
+Eleni                     10500
+Clara                     10500
+Janette                   10000
+Peter                     10000
+Hermann                   10000
+Harrison                  10000
+Tayler                     9600
+Danielle                   9500
+David                      9500
+Patrick                    9500
+Peter                      9000
+Alexander                  9000
+Allan                      9000
+Daniel                     9000
+Alyssa                     8800
+Jonathon                   8600
+Jack                       8400
+William                    8300
+Adam                       8200
+John                       8200
+Matthew                    8000
+Lindsey                    8000
+Christopher                8000
+Payam                      7900
+Jose Manuel                7800
+Ismael                     7700
+Louise                     7500
+Nanette                    7500
+William                    7400
+Elizabeth                  7300
+Mattea                     7200
+Oliver                     7000
+Kimberely                  7000
+Sarath                     7000
+Luis                       6900
+David                      6800
+Susan                      6500
+Shanta                     6500
+Sundar                     6400
+Charles                    6200
+Amit                       6200
+Sundita                    6100
+Pat                        6000
+Bruce                      6000
+Kevin                      5800
+Valli                      4800
+David                      4800
+Jennifer                   4400
+Nandita                    4200
+Diana                      4200
+Alexis                     4100
+Sarah                      4000
+Britney                    3900
+Kelly                      3800
+Jennifer                   3600
+Renske                     3600
+Trenna                     3500
+Julia                      3400
+Jason                      3300
+Laura                      3300
+Julia                      3200
+Samuel                     3200
+Winston                    3200
+Stephen                    3200
+Alexander                  3100
+Alana                      3100
+Jean                       3100
+Curtis                     3100
+Kevin                      3000
+Anthony                    3000
+Shelli                     2900
+Timothy                    2900
+Michael                    2900
+Sigal                      2800
+Vance                      2800
+Girard                     2800
+Mozhe                      2800
+John                       2700
+Irene                      2700
+Guy                        2600
+Douglas                    2600
+Donald                     2600
+Randall                    2600
+Karen                      2500
+
+FIRST_NAME               SALARY
+-------------------- ----------
+James                      2500
+Randall                    2500
+Peter                      2500
+Martha                     2500
+Joshua                     2500
+Ki                         2400
+James                      2400
+Hazel                      2200
+Steven                     2200
+TJ                         2100
+
+107 rows selected.
+
+SQL> select first_name,salary from employees order by first_name asc;
+
+FIRST_NAME               SALARY
+-------------------- ----------
+Adam                       8200
+Alana                      3100
+Alberto                   12000
+Alexander                  9000
+Alexander                  3100
+Alexis                     4100
+Allan                      9000
+Alyssa                     8800
+Amit                       6200
+Anthony                    3000
+Britney                    3900
+Bruce                      6000
+Charles                    6200
+Christopher                8000
+Clara                     10500
+Curtis                     3100
+Daniel                     9000
+Danielle                   9500
+David                      4800
+David                      9500
+David                      6800
+Den                       11000
+Diana                      4200
+Donald                     2600
+Douglas                    2600
+Eleni                     10500
+Elizabeth                  7300
+Ellen                     11000
+Gerald                    11000
+Girard                     2800
+Guy                        2600
+Harrison                  10000
+Hazel                      2200
+Hermann                   10000
+Irene                      2700
+Ismael                     7700
+Jack                       8400
+James                      2500
+James                      2400
+Janette                   10000
+Jason                      3300
+Jean                       3100
+Jennifer                   4400
+Jennifer                   3600
+John                       2700
+John                      14000
+John                       8200
+Jonathon                   8600
+Jose Manuel                7800
+Joshua                     2500
+Julia                      3400
+Julia                      3200
+Karen                      2500
+Karen                     13500
+Kelly                      3800
+Kevin                      3000
+Kevin                      5800
+Ki                         2400
+Kimberely                  7000
+Laura                      3300
+Lex                       17000
+Lindsey                    8000
+Lisa                      11500
+Louise                     7500
+Luis                       6900
+Martha                     2500
+Mattea                     7200
+Matthew                    8000
+Michael                   13000
+Michael                    2900
+Mozhe                      2800
+Nancy                     12000
+Nandita                    4200
+Nanette                    7500
+Neena                     17000
+Oliver                     7000
+Pat                        6000
+Patrick                    9500
+Payam                      7900
+Peter                      9000
+Peter                      2500
+Peter                     10000
+Randall                    2600
+Randall                    2500
+Renske                     3600
+Samuel                     3200
+Sarah                      4000
+Sarath                     7000
+Shanta                     6500
+Shelley                   12000
+Shelli                     2900
+Sigal                      2800
+Stephen                    3200
+Steven                    24000
+Steven                     2200
+Sundar                     6400
+Sundita                    6100
+
+FIRST_NAME               SALARY
+-------------------- ----------
+Susan                      6500
+TJ                         2100
+Tayler                     9600
+Timothy                    2900
+Trenna                     3500
+Valli                      4800
+Vance                      2800
+William                    8300
+William                    7400
+Winston                    3200
+
+107 rows selected.
+
+SQL> select first_name from employees where first_name like 'A%';
+
+FIRST_NAME
+--------------------
+Amit
+Alexis
+Anthony
+Alberto
+Adam
+Alexander
+Alyssa
+Alexander
+Allan
+Alana
+
+10 rows selected.
+
+SQL> select first_name from employees where first_name like 'A%' and first_name like '%a';
+
+FIRST_NAME
+--------------------
+Alyssa
+Alana
+
+2 rows selected.
+
+SQL> select first_name from employees where first_name like 'A%' or first_name like '%a';
+
+FIRST_NAME
+--------------------
+Amit
+Laura
+Alexis
+Anthony
+Julia
+Alberto
+Adam
+Alexander
+Alyssa
+Alexander
+Neena
+Sundita
+Diana
+Mattea
+Allan
+Julia
+Lisa
+Joshua
+Trenna
+Nandita
+Martha
+Clara
+Shanta
+Alana
+
+24 rows selected.
+
+SQL> select first_name from employees where first_name like '_a%';
+
+FIRST_NAME
+--------------------
+David
+Sarah
+David
+Laura
+Harrison
+Nanette
+Karen
+Daniel
+Pat
+Tayler
+Nancy
+Danielle
+Vance
+Payam
+Janette
+James
+David
+Jack
+Jason
+James
+Mattea
+Randall
+Samuel
+Karen
+Valli
+Randall
+Hazel
+Nandita
+Sarath
+Martha
+Patrick
+Matthew
+
+32 rows selected.
+
+SQL> select first_name from employees where first_name like '__n%';
+
+FIRST_NAME
+--------------------
+Sundar
+Nanette
+Jennifer
+Daniel
+Nancy
+Danielle
+Vance
+Janette
+Sundita
+Renske
+Randall
+Donald
+Randall
+Den
+Nandita
+Lindsey
+Jonathon
+Winston
+Jennifer
+
+19 rows selected.
+
+SQL> select first_name from employees where first_name like '%REP%';
+
+no rows selected
+
+SQL> select first_name from employees where first_name like '%rep%';
+
+no rows selected
+
+SQL> select first_name from employees where job_id like '%rep%';
+
+no rows selected
+
+SQL> select first_name from employees where job_id like '%RED%';
+
+no rows selected
+
+SQL> select first_name from employees where job_id like '%REP%';
+
+FIRST_NAME
+--------------------
+Peter
+David
+Peter
+Christopher
+Nanette
+Oliver
+Janette
+Patrick
+Allan
+Lindsey
+Louise
+Sarath
+Clara
+Danielle
+Mattea
+David
+Sundar
+Amit
+Lisa
+Harrison
+Tayler
+William
+Elizabeth
+Sundita
+Ellen
+Alyssa
+Jonathon
+Jack
+Kimberely
+Charles
+Pat
+Susan
+Hermann
+
+33 rows selected.
+
+SQL> select first_name, job_id from employees where job_id like '%REP%';
+
+FIRST_NAME           JOB_ID
+-------------------- ----------
+Peter                SA_REP
+David                SA_REP
+Peter                SA_REP
+Christopher          SA_REP
+Nanette              SA_REP
+Oliver               SA_REP
+Janette              SA_REP
+Patrick              SA_REP
+Allan                SA_REP
+Lindsey              SA_REP
+Louise               SA_REP
+Sarath               SA_REP
+Clara                SA_REP
+Danielle             SA_REP
+Mattea               SA_REP
+David                SA_REP
+Sundar               SA_REP
+Amit                 SA_REP
+Lisa                 SA_REP
+Harrison             SA_REP
+Tayler               SA_REP
+William              SA_REP
+Elizabeth            SA_REP
+Sundita              SA_REP
+Ellen                SA_REP
+Alyssa               SA_REP
+Jonathon             SA_REP
+Jack                 SA_REP
+Kimberely            SA_REP
+Charles              SA_REP
+Pat                  MK_REP
+Susan                HR_REP
+Hermann              PR_REP
+
+33 rows selected.
+
+SQL> select first_name from employees where job_id like '%REP%';
+
+FIRST_NAME
+--------------------
+Peter
+David
+Peter
+Christopher
+Nanette
+Oliver
+Janette
+Patrick
+Allan
+Lindsey
+Louise
+Sarath
+Clara
+Danielle
+Mattea
+David
+Sundar
+Amit
+Lisa
+Harrison
+Tayler
+William
+Elizabeth
+Sundita
+Ellen
+Alyssa
+Jonathon
+Jack
+Kimberely
+Charles
+Pat
+Susan
+Hermann
+
+33 rows selected.
+
+SQL> select sum(salary) from employees;
+
+SUM(SALARY)
+-----------
+     691400
+
+1 row selected.
+
+SQL> select sum(salary),avg(salary),min(salary),max(salary) from employees;
+
+SUM(SALARY) AVG(SALARY) MIN(SALARY) MAX(SALARY)
+----------- ----------- ----------- -----------
+     691400  6461.68224        2100       24000
+
+1 row selected.
+
+SQL> select sum(salary),avg(salary),min(salary),max(salary) as MAX from employees;
+
+SUM(SALARY) AVG(SALARY) MIN(SALARY)        MAX
+----------- ----------- ----------- ----------
+     691400  6461.68224        2100      24000
+
+1 row selected.
+
+SQL> select sum(salary) as SUM,avg(salary) as AVG,min(salary) as MIN,max(salary) as MAX from employees;
+
+       SUM        AVG        MIN        MAX
+---------- ---------- ---------- ----------
+    691400 6461.68224       2100      24000
+
+1 row selected.
+
+SQL> select sum(salary) as SUM,avg(salary) as AVG,min(salary) as MIN,max(salary) as MAX,count(salary) as COUNT from employees;
+
+       SUM        AVG        MIN        MAX      COUNT
+---------- ---------- ---------- ---------- ----------
+    691400 6461.68224       2100      24000        107
+
+1 row selected.
+
+SQL> select sum(salary) as SUM,avg(salary) as AVG,min(salary) as MIN,max(salary) as MAX,count(salary) as COUNT from employees;
+
+       SUM        AVG        MIN        MAX      COUNT
+---------- ---------- ---------- ---------- ----------
+    691400 6461.68224       2100      24000        107
+
+1 row selected.
+
+SQL> select department_id, sum(salary) from employees group by department_id;
+
+DEPARTMENT_ID SUM(SALARY)
+------------- -----------
+          100       51600
+           30       24900
+                     7000
+           90       58000
+           20       19000
+           70       10000
+          110       20300
+           50      156400
+           80      304500
+           40        6500
+           60       28800
+           10        4400
+
+12 rows selected.
+
+SQL> select department_id, job_id, sum(salary) from employees group by department_id,job_id;
+
+DEPARTMENT_ID JOB_ID     SUM(SALARY)
+------------- ---------- -----------
+          110 AC_ACCOUNT        8300
+           90 AD_VP            34000
+           50 ST_CLERK         55700
+           80 SA_REP          243500
+           50 ST_MAN           36400
+           80 SA_MAN           61000
+          110 AC_MGR           12000
+           90 AD_PRES          24000
+           60 IT_PROG          28800
+          100 FI_MGR           12000
+           30 PU_CLERK         13900
+           50 SH_CLERK         64300
+           20 MK_MAN           13000
+          100 FI_ACCOUNT       39600
+              SA_REP            7000
+           70 PR_REP           10000
+           30 PU_MAN           11000
+           10 AD_ASST           4400
+           20 MK_REP            6000
+           40 HR_REP            6500
+
+20 rows selected.
+
+SQL> select department_id, sum(salary) from employees group by department_id having sum(salary)>50000;
+
+DEPARTMENT_ID SUM(SALARY)
+------------- -----------
+          100       51600
+           90       58000
+           50      156400
+           80      304500
+
+4 rows selected.
+
+SQL> select department_id, sum(salary) from employees group by department_id having sum(salary)>50000 order by sum(salary) desc;
+
+DEPARTMENT_ID SUM(SALARY)
+------------- -----------
+           80      304500
+           50      156400
+           90       58000
+          100       51600
+
+4 rows selected.
+
+SQL> select round(45.93456,2) from dual;
+
+ROUND(45.93456,2)
+-----------------
+            45.93
+
+1 row selected.
+
+SQL> select round(45.93456,3) from dual;
+
+ROUND(45.93456,3)
+-----------------
+           45.935
+
+1 row selected.
+
+SQL> select round(41,0) from dual;
+
+ROUND(41,0)
+-----------
+         41
+
+1 row selected.
+
+SQL> select round(41.93456,0) from dual;
+
+ROUND(41.93456,0)
+-----------------
+               42
+
+1 row selected.
+
+SQL> select round(-1.93456,0) from dual;
+
+ROUND(-1.93456,0)
+-----------------
+               -2
+
+1 row selected.
+
+SQL> select round(-1.1,0) from dual;
+
+ROUND(-1.1,0)
+-------------
+           -1
+
+1 row selected.
+
+SQL> alter table samp add(doj date);
+
+Table altered.
+
+SQL> desc samp;
+ Name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Null?    Type
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ REGNO                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  NUMBER
+ NAME                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   VARCHAR2(15)
+ DOJ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    DATE
+
+SQL> set linesize 20;
+SQL> desc samp;
+ Name              Null?    Type
+ ----------------- -------- ------------
+ REGNO                      NUMBER
+ NAME                       VARCHAR2(15)
+ DOJ                        DATE
+
+SQL> select * from samp;
+
+     REGNO
+----------
+NAME
+---------------
+DOJ
+---------
+       101
+ashvath
+
+
+       102
+kevin
+
+
+
+2 rows selected.
+
+SQL> set linesize 1500;
+SQL> select * from samp;
+
+     REGNO NAME            DOJ
+---------- --------------- ---------
+       101 ashvath
+       102 kevin
+
+2 rows selected.
+
+SQL> update samp set doj='01-jan-2021';
+
+2 rows updated.
+
+SQL> update samp set doj='22-mar-2020' where regno = 102;
+
+1 row updated.
+
+SQL> select * from samp;
+
+     REGNO NAME            DOJ
+---------- --------------- ---------
+       101 ashvath         01-JAN-21
+       102 kevin           22-MAR-20
+
+2 rows selected.
+
+SQL> desc employees;
+ Name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Null?    Type
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ EMPLOYEE_ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   NOT NULL NUMBER(6)
+ FIRST_NAME                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             VARCHAR2(20)
+ LAST_NAME                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     NOT NULL VARCHAR2(25)
+ EMAIL                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         NOT NULL VARCHAR2(25)
+ PHONE_NUMBER                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           VARCHAR2(20)
+ HIRE_DATE                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     NOT NULL DATE
+ JOB_ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        NOT NULL VARCHAR2(10)
+ SALARY                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 NUMBER(8,2)
+ COMMISSION_PCT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         NUMBER(2,2)
+ MANAGER_ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             NUMBER(6)
+ DEPARTMENT_ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          NUMBER(4)
+
+SQL> set linesize 20;
+SQL> desc employees;
+ Name              Null?    Type
+ ----------------- -------- ------------
+ EMPLOYEE_ID       NOT NULL NUMBER(6)
+ FIRST_NAME                 VARCHAR2(20)
+ LAST_NAME         NOT NULL VARCHAR2(25)
+ EMAIL             NOT NULL VARCHAR2(25)
+ PHONE_NUMBER               VARCHAR2(20)
+ HIRE_DATE         NOT NULL DATE
+ JOB_ID            NOT NULL VARCHAR2(10)
+ SALARY                     NUMBER(8,2)
+ COMMISSION_PCT             NUMBER(2,2)
+ MANAGER_ID                 NUMBER(6)
+ DEPARTMENT_ID              NUMBER(4)
+
+SQL> select sysdate from dual;
+
+SYSDATE
+---------
+28-JUL-22
+
+1 row selected.
+
+SQL> select employee_id, first_name, hire_date, sysdate-hire_date as exp from employees;
+
+EMPLOYEE_ID
+-----------
+FIRST_NAME
+--------------------
+HIRE_DATE        EXP
+--------- ----------
+        100
+Steven
+17-JUN-87  12825.486
+
+        101
+Neena
+21-SEP-89  11998.486
+
+        102
+Lex
+13-JAN-93  10788.486
+
+        103
+Alexander
+03-JAN-90  11894.486
+
+        104
+Bruce
+21-MAY-91  11391.486
+
+        105
+David
+25-JUN-97 9164.48604
+
+        106
+Valli
+05-FEB-98 8939.48604
+
+        107
+Diana
+07-FEB-99 8572.48604
+
+        108
+Nancy
+17-AUG-94  10207.486
+
+        109
+Daniel
+16-AUG-94  10208.486
+
+        110
+John
+28-SEP-97 9069.48604
+
+        111
+Ismael
+30-SEP-97 9067.48604
+
+        112
+Jose Manuel
+07-MAR-98 8909.48604
+
+        113
+Luis
+07-DEC-99 8269.48604
+
+        114
+Den
+07-DEC-94  10095.486
+
+        115
+Alexander
+18-MAY-95 9933.48604
+
+        116
+Shelli
+24-DEC-97 8982.48604
+
+        117
+Sigal
+24-JUL-97 9135.48604
+
+        118
+Guy
+15-NOV-98 8656.48604
+
+        119
+Karen
+10-AUG-99 8388.48604
+
+        120
+Matthew
+18-JUL-96 9506.48604
+
+        121
+Adam
+10-APR-97 9240.48604
+
+        122
+Payam
+01-MAY-95 9950.48604
+
+        123
+
+EMPLOYEE_ID
+-----------
+FIRST_NAME
+--------------------
+HIRE_DATE        EXP
+--------- ----------
+Shanta
+10-OCT-97 9057.48604
+
+        124
+Kevin
+16-NOV-99 8290.48604
+
+        125
+Julia
+16-JUL-97 9143.48604
+
+        126
+Irene
+28-SEP-98 8704.48604
+
+        127
+James
+14-JAN-99 8596.48604
+
+        128
+Steven
+08-MAR-00 8177.48604
+
+        129
+Laura
+20-AUG-97 9108.48604
+
+        130
+Mozhe
+30-OCT-97 9037.48604
+
+        131
+James
+16-FEB-97 9293.48604
+
+        132
+TJ
+10-APR-99 8510.48604
+
+        133
+Jason
+14-JUN-96 9540.48604
+
+        134
+Michael
+26-AUG-98 8737.48604
+
+        135
+Ki
+12-DEC-99 8264.48604
+
+        136
+Hazel
+06-FEB-00 8208.48604
+
+        137
+Renske
+14-JUL-95 9876.48604
+
+        138
+Stephen
+26-OCT-97 9041.48604
+
+        139
+John
+12-FEB-98 8932.48604
+
+        140
+Joshua
+06-APR-98 8879.48604
+
+        141
+Trenna
+17-OCT-95 9781.48604
+
+        142
+Curtis
+29-JAN-97 9311.48604
+
+        143
+Randall
+15-MAR-98 8901.48604
+
+        144
+Peter
+09-JUL-98 8785.48604
+
+        145
+John
+01-OCT-96 9431.48604
+
+        146
+Karen
+
+EMPLOYEE_ID
+-----------
+FIRST_NAME
+--------------------
+HIRE_DATE        EXP
+--------- ----------
+05-JAN-97 9335.48604
+
+        147
+Alberto
+10-MAR-97 9271.48604
+
+        148
+Gerald
+15-OCT-99 8322.48604
+
+        149
+Eleni
+29-JAN-00 8216.48604
+
+        150
+Peter
+30-JAN-97 9310.48604
+
+        151
+David
+24-MAR-97 9257.48604
+
+        152
+Peter
+20-AUG-97 9108.48604
+
+        153
+Christopher
+30-MAR-98 8886.48604
+
+        154
+Nanette
+09-DEC-98 8632.48604
+
+        155
+Oliver
+23-NOV-99 8283.48604
+
+        156
+Janette
+30-JAN-96 9676.48604
+
+        157
+Patrick
+04-MAR-96 9642.48604
+
+        158
+Allan
+01-AUG-96 9492.48604
+
+        159
+Lindsey
+10-MAR-97 9271.48604
+
+        160
+Louise
+15-DEC-97 8991.48604
+
+        161
+Sarath
+03-NOV-98 8668.48604
+
+        162
+Clara
+11-NOV-97 9025.48604
+
+        163
+Danielle
+19-MAR-99 8532.48604
+
+        164
+Mattea
+24-JAN-00 8221.48604
+
+        165
+David
+23-FEB-00 8191.48604
+
+        166
+Sundar
+24-MAR-00 8161.48604
+
+        167
+Amit
+21-APR-00 8133.48604
+
+        168
+Lisa
+11-MAR-97 9270.48604
+
+        169
+Harrison
+23-MAR-98 8893.48604
+
+EMPLOYEE_ID
+-----------
+FIRST_NAME
+--------------------
+HIRE_DATE        EXP
+--------- ----------
+
+        170
+Tayler
+24-JAN-98 8951.48604
+
+        171
+William
+23-FEB-99 8556.48604
+
+        172
+Elizabeth
+24-MAR-99 8527.48604
+
+        173
+Sundita
+21-APR-00 8133.48604
+
+        174
+Ellen
+11-MAY-96 9574.48604
+
+        175
+Alyssa
+19-MAR-97 9262.48604
+
+        176
+Jonathon
+24-MAR-98 8892.48604
+
+        177
+Jack
+23-APR-98 8862.48604
+
+        178
+Kimberely
+24-MAY-99 8466.48604
+
+        179
+Charles
+04-JAN-00 8241.48604
+
+        180
+Winston
+24-JAN-98 8951.48604
+
+        181
+Jean
+23-FEB-98 8921.48604
+
+        182
+Martha
+21-JUN-99 8438.48604
+
+        183
+Girard
+03-FEB-00 8211.48604
+
+        184
+Nandita
+27-JAN-96 9679.48604
+
+        185
+Alexis
+20-FEB-97 9289.48604
+
+        186
+Julia
+24-JUN-98 8800.48604
+
+        187
+Anthony
+07-FEB-99 8572.48604
+
+        188
+Kelly
+14-JUN-97 9175.48604
+
+        189
+Jennifer
+13-AUG-97 9115.48604
+
+        190
+Timothy
+11-JUL-98 8783.48604
+
+        191
+Randall
+19-DEC-99 8257.48604
+
+        192
+Sarah
+04-FEB-96 9671.48604
+
+
+EMPLOYEE_ID
+-----------
+FIRST_NAME
+--------------------
+HIRE_DATE        EXP
+--------- ----------
+        193
+Britney
+03-MAR-97 9278.48604
+
+        194
+Samuel
+01-JUL-98 8793.48604
+
+        195
+Vance
+17-MAR-99 8534.48604
+
+        196
+Alana
+24-APR-98 8861.48604
+
+        197
+Kevin
+23-MAY-98 8832.48604
+
+        198
+Donald
+21-JUN-99 8438.48604
+
+        199
+Douglas
+13-JAN-00 8232.48604
+
+        200
+Jennifer
+17-SEP-87  12733.486
+
+        201
+Michael
+17-FEB-96 9658.48604
+
+        202
+Pat
+17-AUG-97 9111.48604
+
+        203
+Susan
+07-JUN-94  10278.486
+
+        204
+Hermann
+07-JUN-94  10278.486
+
+        205
+Shelley
+07-JUN-94  10278.486
+
+        206
+William
+07-JUN-94  10278.486
+
+
+107 rows selected.
+
+SQL> set linesize 1500;
+SQL> select employee_id, first_name, hire_date, sysdate-hire_date as exp from employees;
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE        EXP
+----------- -------------------- --------- ----------
+        100 Steven               17-JUN-87 12825.4861
+        101 Neena                21-SEP-89 11998.4861
+        102 Lex                  13-JAN-93 10788.4861
+        103 Alexander            03-JAN-90 11894.4861
+        104 Bruce                21-MAY-91 11391.4861
+        105 David                25-JUN-97 9164.48615
+        106 Valli                05-FEB-98 8939.48615
+        107 Diana                07-FEB-99 8572.48615
+        108 Nancy                17-AUG-94 10207.4861
+        109 Daniel               16-AUG-94 10208.4861
+        110 John                 28-SEP-97 9069.48615
+        111 Ismael               30-SEP-97 9067.48615
+        112 Jose Manuel          07-MAR-98 8909.48615
+        113 Luis                 07-DEC-99 8269.48615
+        114 Den                  07-DEC-94 10095.4861
+        115 Alexander            18-MAY-95 9933.48615
+        116 Shelli               24-DEC-97 8982.48615
+        117 Sigal                24-JUL-97 9135.48615
+        118 Guy                  15-NOV-98 8656.48615
+        119 Karen                10-AUG-99 8388.48615
+        120 Matthew              18-JUL-96 9506.48615
+        121 Adam                 10-APR-97 9240.48615
+        122 Payam                01-MAY-95 9950.48615
+        123 Shanta               10-OCT-97 9057.48615
+        124 Kevin                16-NOV-99 8290.48615
+        125 Julia                16-JUL-97 9143.48615
+        126 Irene                28-SEP-98 8704.48615
+        127 James                14-JAN-99 8596.48615
+        128 Steven               08-MAR-00 8177.48615
+        129 Laura                20-AUG-97 9108.48615
+        130 Mozhe                30-OCT-97 9037.48615
+        131 James                16-FEB-97 9293.48615
+        132 TJ                   10-APR-99 8510.48615
+        133 Jason                14-JUN-96 9540.48615
+        134 Michael              26-AUG-98 8737.48615
+        135 Ki                   12-DEC-99 8264.48615
+        136 Hazel                06-FEB-00 8208.48615
+        137 Renske               14-JUL-95 9876.48615
+        138 Stephen              26-OCT-97 9041.48615
+        139 John                 12-FEB-98 8932.48615
+        140 Joshua               06-APR-98 8879.48615
+        141 Trenna               17-OCT-95 9781.48615
+        142 Curtis               29-JAN-97 9311.48615
+        143 Randall              15-MAR-98 8901.48615
+        144 Peter                09-JUL-98 8785.48615
+        145 John                 01-OCT-96 9431.48615
+        146 Karen                05-JAN-97 9335.48615
+        147 Alberto              10-MAR-97 9271.48615
+        148 Gerald               15-OCT-99 8322.48615
+        149 Eleni                29-JAN-00 8216.48615
+        150 Peter                30-JAN-97 9310.48615
+        151 David                24-MAR-97 9257.48615
+        152 Peter                20-AUG-97 9108.48615
+        153 Christopher          30-MAR-98 8886.48615
+        154 Nanette              09-DEC-98 8632.48615
+        155 Oliver               23-NOV-99 8283.48615
+        156 Janette              30-JAN-96 9676.48615
+        157 Patrick              04-MAR-96 9642.48615
+        158 Allan                01-AUG-96 9492.48615
+        159 Lindsey              10-MAR-97 9271.48615
+        160 Louise               15-DEC-97 8991.48615
+        161 Sarath               03-NOV-98 8668.48615
+        162 Clara                11-NOV-97 9025.48615
+        163 Danielle             19-MAR-99 8532.48615
+        164 Mattea               24-JAN-00 8221.48615
+        165 David                23-FEB-00 8191.48615
+        166 Sundar               24-MAR-00 8161.48615
+        167 Amit                 21-APR-00 8133.48615
+        168 Lisa                 11-MAR-97 9270.48615
+        169 Harrison             23-MAR-98 8893.48615
+        170 Tayler               24-JAN-98 8951.48615
+        171 William              23-FEB-99 8556.48615
+        172 Elizabeth            24-MAR-99 8527.48615
+        173 Sundita              21-APR-00 8133.48615
+        174 Ellen                11-MAY-96 9574.48615
+        175 Alyssa               19-MAR-97 9262.48615
+        176 Jonathon             24-MAR-98 8892.48615
+        177 Jack                 23-APR-98 8862.48615
+        178 Kimberely            24-MAY-99 8466.48615
+        179 Charles              04-JAN-00 8241.48615
+        180 Winston              24-JAN-98 8951.48615
+        181 Jean                 23-FEB-98 8921.48615
+        182 Martha               21-JUN-99 8438.48615
+        183 Girard               03-FEB-00 8211.48615
+        184 Nandita              27-JAN-96 9679.48615
+        185 Alexis               20-FEB-97 9289.48615
+        186 Julia                24-JUN-98 8800.48615
+        187 Anthony              07-FEB-99 8572.48615
+        188 Kelly                14-JUN-97 9175.48615
+        189 Jennifer             13-AUG-97 9115.48615
+        190 Timothy              11-JUL-98 8783.48615
+        191 Randall              19-DEC-99 8257.48615
+        192 Sarah                04-FEB-96 9671.48615
+        193 Britney              03-MAR-97 9278.48615
+        194 Samuel               01-JUL-98 8793.48615
+        195 Vance                17-MAR-99 8534.48615
+        196 Alana                24-APR-98 8861.48615
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE        EXP
+----------- -------------------- --------- ----------
+        197 Kevin                23-MAY-98 8832.48615
+        198 Donald               21-JUN-99 8438.48615
+        199 Douglas              13-JAN-00 8232.48615
+        200 Jennifer             17-SEP-87 12733.4861
+        201 Michael              17-FEB-96 9658.48615
+        202 Pat                  17-AUG-97 9111.48615
+        203 Susan                07-JUN-94 10278.4861
+        204 Hermann              07-JUN-94 10278.4861
+        205 Shelley              07-JUN-94 10278.4861
+        206 William              07-JUN-94 10278.4861
+
+107 rows selected.
+
+SQL> set linesize 15000;
+SQL> select employee_id, first_name, hire_date, sysdate-hire_date as exp from employees;
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE        EXP
+----------- -------------------- --------- ----------
+        100 Steven               17-JUN-87 12825.4872
+        101 Neena                21-SEP-89 11998.4872
+        102 Lex                  13-JAN-93 10788.4872
+        103 Alexander            03-JAN-90 11894.4872
+        104 Bruce                21-MAY-91 11391.4872
+        105 David                25-JUN-97 9164.48723
+        106 Valli                05-FEB-98 8939.48723
+        107 Diana                07-FEB-99 8572.48723
+        108 Nancy                17-AUG-94 10207.4872
+        109 Daniel               16-AUG-94 10208.4872
+        110 John                 28-SEP-97 9069.48723
+        111 Ismael               30-SEP-97 9067.48723
+        112 Jose Manuel          07-MAR-98 8909.48723
+        113 Luis                 07-DEC-99 8269.48723
+        114 Den                  07-DEC-94 10095.4872
+        115 Alexander            18-MAY-95 9933.48723
+        116 Shelli               24-DEC-97 8982.48723
+        117 Sigal                24-JUL-97 9135.48723
+        118 Guy                  15-NOV-98 8656.48723
+        119 Karen                10-AUG-99 8388.48723
+        120 Matthew              18-JUL-96 9506.48723
+        121 Adam                 10-APR-97 9240.48723
+        122 Payam                01-MAY-95 9950.48723
+        123 Shanta               10-OCT-97 9057.48723
+        124 Kevin                16-NOV-99 8290.48723
+        125 Julia                16-JUL-97 9143.48723
+        126 Irene                28-SEP-98 8704.48723
+        127 James                14-JAN-99 8596.48723
+        128 Steven               08-MAR-00 8177.48723
+        129 Laura                20-AUG-97 9108.48723
+        130 Mozhe                30-OCT-97 9037.48723
+        131 James                16-FEB-97 9293.48723
+        132 TJ                   10-APR-99 8510.48723
+        133 Jason                14-JUN-96 9540.48723
+        134 Michael              26-AUG-98 8737.48723
+        135 Ki                   12-DEC-99 8264.48723
+        136 Hazel                06-FEB-00 8208.48723
+        137 Renske               14-JUL-95 9876.48723
+        138 Stephen              26-OCT-97 9041.48723
+        139 John                 12-FEB-98 8932.48723
+        140 Joshua               06-APR-98 8879.48723
+        141 Trenna               17-OCT-95 9781.48723
+        142 Curtis               29-JAN-97 9311.48723
+        143 Randall              15-MAR-98 8901.48723
+        144 Peter                09-JUL-98 8785.48723
+        145 John                 01-OCT-96 9431.48723
+        146 Karen                05-JAN-97 9335.48723
+        147 Alberto              10-MAR-97 9271.48723
+        148 Gerald               15-OCT-99 8322.48723
+        149 Eleni                29-JAN-00 8216.48723
+        150 Peter                30-JAN-97 9310.48723
+        151 David                24-MAR-97 9257.48723
+        152 Peter                20-AUG-97 9108.48723
+        153 Christopher          30-MAR-98 8886.48723
+        154 Nanette              09-DEC-98 8632.48723
+        155 Oliver               23-NOV-99 8283.48723
+        156 Janette              30-JAN-96 9676.48723
+        157 Patrick              04-MAR-96 9642.48723
+        158 Allan                01-AUG-96 9492.48723
+        159 Lindsey              10-MAR-97 9271.48723
+        160 Louise               15-DEC-97 8991.48723
+        161 Sarath               03-NOV-98 8668.48723
+        162 Clara                11-NOV-97 9025.48723
+        163 Danielle             19-MAR-99 8532.48723
+        164 Mattea               24-JAN-00 8221.48723
+        165 David                23-FEB-00 8191.48723
+        166 Sundar               24-MAR-00 8161.48723
+        167 Amit                 21-APR-00 8133.48723
+        168 Lisa                 11-MAR-97 9270.48723
+        169 Harrison             23-MAR-98 8893.48723
+        170 Tayler               24-JAN-98 8951.48723
+        171 William              23-FEB-99 8556.48723
+        172 Elizabeth            24-MAR-99 8527.48723
+        173 Sundita              21-APR-00 8133.48723
+        174 Ellen                11-MAY-96 9574.48723
+        175 Alyssa               19-MAR-97 9262.48723
+        176 Jonathon             24-MAR-98 8892.48723
+        177 Jack                 23-APR-98 8862.48723
+        178 Kimberely            24-MAY-99 8466.48723
+        179 Charles              04-JAN-00 8241.48723
+        180 Winston              24-JAN-98 8951.48723
+        181 Jean                 23-FEB-98 8921.48723
+        182 Martha               21-JUN-99 8438.48723
+        183 Girard               03-FEB-00 8211.48723
+        184 Nandita              27-JAN-96 9679.48723
+        185 Alexis               20-FEB-97 9289.48723
+        186 Julia                24-JUN-98 8800.48723
+        187 Anthony              07-FEB-99 8572.48723
+        188 Kelly                14-JUN-97 9175.48723
+        189 Jennifer             13-AUG-97 9115.48723
+        190 Timothy              11-JUL-98 8783.48723
+        191 Randall              19-DEC-99 8257.48723
+        192 Sarah                04-FEB-96 9671.48723
+        193 Britney              03-MAR-97 9278.48723
+        194 Samuel               01-JUL-98 8793.48723
+        195 Vance                17-MAR-99 8534.48723
+        196 Alana                24-APR-98 8861.48723
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE        EXP
+----------- -------------------- --------- ----------
+        197 Kevin                23-MAY-98 8832.48723
+        198 Donald               21-JUN-99 8438.48723
+        199 Douglas              13-JAN-00 8232.48723
+        200 Jennifer             17-SEP-87 12733.4872
+        201 Michael              17-FEB-96 9658.48723
+        202 Pat                  17-AUG-97 9111.48723
+        203 Susan                07-JUN-94 10278.4872
+        204 Hermann              07-JUN-94 10278.4872
+        205 Shelley              07-JUN-94 10278.4872
+        206 William              07-JUN-94 10278.4872
+
+107 rows selected.
+
+SQL> set linesize 15000;
+SQL> select employee_id, first_name, hire_date, sysdate-hire_date as exp from employees;
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE        EXP
+----------- -------------------- --------- ----------
+        100 Steven               17-JUN-87 12825.4874
+        101 Neena                21-SEP-89 11998.4874
+        102 Lex                  13-JAN-93 10788.4874
+        103 Alexander            03-JAN-90 11894.4874
+        104 Bruce                21-MAY-91 11391.4874
+        105 David                25-JUN-97 9164.48742
+        106 Valli                05-FEB-98 8939.48742
+        107 Diana                07-FEB-99 8572.48742
+        108 Nancy                17-AUG-94 10207.4874
+        109 Daniel               16-AUG-94 10208.4874
+        110 John                 28-SEP-97 9069.48742
+        111 Ismael               30-SEP-97 9067.48742
+        112 Jose Manuel          07-MAR-98 8909.48742
+        113 Luis                 07-DEC-99 8269.48742
+        114 Den                  07-DEC-94 10095.4874
+        115 Alexander            18-MAY-95 9933.48742
+        116 Shelli               24-DEC-97 8982.48742
+        117 Sigal                24-JUL-97 9135.48742
+        118 Guy                  15-NOV-98 8656.48742
+        119 Karen                10-AUG-99 8388.48742
+        120 Matthew              18-JUL-96 9506.48742
+        121 Adam                 10-APR-97 9240.48742
+        122 Payam                01-MAY-95 9950.48742
+        123 Shanta               10-OCT-97 9057.48742
+        124 Kevin                16-NOV-99 8290.48742
+        125 Julia                16-JUL-97 9143.48742
+        126 Irene                28-SEP-98 8704.48742
+        127 James                14-JAN-99 8596.48742
+        128 Steven               08-MAR-00 8177.48742
+        129 Laura                20-AUG-97 9108.48742
+        130 Mozhe                30-OCT-97 9037.48742
+        131 James                16-FEB-97 9293.48742
+        132 TJ                   10-APR-99 8510.48742
+        133 Jason                14-JUN-96 9540.48742
+        134 Michael              26-AUG-98 8737.48742
+        135 Ki                   12-DEC-99 8264.48742
+        136 Hazel                06-FEB-00 8208.48742
+        137 Renske               14-JUL-95 9876.48742
+        138 Stephen              26-OCT-97 9041.48742
+        139 John                 12-FEB-98 8932.48742
+        140 Joshua               06-APR-98 8879.48742
+        141 Trenna               17-OCT-95 9781.48742
+        142 Curtis               29-JAN-97 9311.48742
+        143 Randall              15-MAR-98 8901.48742
+        144 Peter                09-JUL-98 8785.48742
+        145 John                 01-OCT-96 9431.48742
+        146 Karen                05-JAN-97 9335.48742
+        147 Alberto              10-MAR-97 9271.48742
+        148 Gerald               15-OCT-99 8322.48742
+        149 Eleni                29-JAN-00 8216.48742
+        150 Peter                30-JAN-97 9310.48742
+        151 David                24-MAR-97 9257.48742
+        152 Peter                20-AUG-97 9108.48742
+        153 Christopher          30-MAR-98 8886.48742
+        154 Nanette              09-DEC-98 8632.48742
+        155 Oliver               23-NOV-99 8283.48742
+        156 Janette              30-JAN-96 9676.48742
+        157 Patrick              04-MAR-96 9642.48742
+        158 Allan                01-AUG-96 9492.48742
+        159 Lindsey              10-MAR-97 9271.48742
+        160 Louise               15-DEC-97 8991.48742
+        161 Sarath               03-NOV-98 8668.48742
+        162 Clara                11-NOV-97 9025.48742
+        163 Danielle             19-MAR-99 8532.48742
+        164 Mattea               24-JAN-00 8221.48742
+        165 David                23-FEB-00 8191.48742
+        166 Sundar               24-MAR-00 8161.48742
+        167 Amit                 21-APR-00 8133.48742
+        168 Lisa                 11-MAR-97 9270.48742
+        169 Harrison             23-MAR-98 8893.48742
+        170 Tayler               24-JAN-98 8951.48742
+        171 William              23-FEB-99 8556.48742
+        172 Elizabeth            24-MAR-99 8527.48742
+        173 Sundita              21-APR-00 8133.48742
+        174 Ellen                11-MAY-96 9574.48742
+        175 Alyssa               19-MAR-97 9262.48742
+        176 Jonathon             24-MAR-98 8892.48742
+        177 Jack                 23-APR-98 8862.48742
+        178 Kimberely            24-MAY-99 8466.48742
+        179 Charles              04-JAN-00 8241.48742
+        180 Winston              24-JAN-98 8951.48742
+        181 Jean                 23-FEB-98 8921.48742
+        182 Martha               21-JUN-99 8438.48742
+        183 Girard               03-FEB-00 8211.48742
+        184 Nandita              27-JAN-96 9679.48742
+        185 Alexis               20-FEB-97 9289.48742
+        186 Julia                24-JUN-98 8800.48742
+        187 Anthony              07-FEB-99 8572.48742
+        188 Kelly                14-JUN-97 9175.48742
+        189 Jennifer             13-AUG-97 9115.48742
+        190 Timothy              11-JUL-98 8783.48742
+        191 Randall              19-DEC-99 8257.48742
+        192 Sarah                04-FEB-96 9671.48742
+        193 Britney              03-MAR-97 9278.48742
+        194 Samuel               01-JUL-98 8793.48742
+        195 Vance                17-MAR-99 8534.48742
+        196 Alana                24-APR-98 8861.48742
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE        EXP
+----------- -------------------- --------- ----------
+        197 Kevin                23-MAY-98 8832.48742
+        198 Donald               21-JUN-99 8438.48742
+        199 Douglas              13-JAN-00 8232.48742
+        200 Jennifer             17-SEP-87 12733.4874
+        201 Michael              17-FEB-96 9658.48742
+        202 Pat                  17-AUG-97 9111.48742
+        203 Susan                07-JUN-94 10278.4874
+        204 Hermann              07-JUN-94 10278.4874
+        205 Shelley              07-JUN-94 10278.4874
+        206 William              07-JUN-94 10278.4874
+
+107 rows selected.
+
+SQL> select employee_id, first_name, hire_date, (sysdate-hire_date)/30 as exp from employees;
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE        EXP
+----------- -------------------- --------- ----------
+        100 Steven               17-JUN-87 427.516265
+        101 Neena                21-SEP-89 399.949598
+        102 Lex                  13-JAN-93 359.616265
+        103 Alexander            03-JAN-90 396.482932
+        104 Bruce                21-MAY-91 379.716265
+        105 David                25-JUN-97 305.482932
+        106 Valli                05-FEB-98 297.982932
+        107 Diana                07-FEB-99 285.749598
+        108 Nancy                17-AUG-94 340.249598
+        109 Daniel               16-AUG-94 340.282932
+        110 John                 28-SEP-97 302.316265
+        111 Ismael               30-SEP-97 302.249598
+        112 Jose Manuel          07-MAR-98 296.982932
+        113 Luis                 07-DEC-99 275.649598
+        114 Den                  07-DEC-94 336.516265
+        115 Alexander            18-MAY-95 331.116265
+        116 Shelli               24-DEC-97 299.416265
+        117 Sigal                24-JUL-97 304.516265
+        118 Guy                  15-NOV-98 288.549598
+        119 Karen                10-AUG-99 279.616265
+        120 Matthew              18-JUL-96 316.882932
+        121 Adam                 10-APR-97 308.016265
+        122 Payam                01-MAY-95 331.682932
+        123 Shanta               10-OCT-97 301.916265
+        124 Kevin                16-NOV-99 276.349598
+        125 Julia                16-JUL-97 304.782932
+        126 Irene                28-SEP-98 290.149598
+        127 James                14-JAN-99 286.549598
+        128 Steven               08-MAR-00 272.582932
+        129 Laura                20-AUG-97 303.616265
+        130 Mozhe                30-OCT-97 301.249598
+        131 James                16-FEB-97 309.782932
+        132 TJ                   10-APR-99 283.682932
+        133 Jason                14-JUN-96 318.016265
+        134 Michael              26-AUG-98 291.249598
+        135 Ki                   12-DEC-99 275.482932
+        136 Hazel                06-FEB-00 273.616265
+        137 Renske               14-JUL-95 329.216265
+        138 Stephen              26-OCT-97 301.382932
+        139 John                 12-FEB-98 297.749598
+        140 Joshua               06-APR-98 295.982932
+        141 Trenna               17-OCT-95 326.049598
+        142 Curtis               29-JAN-97 310.382932
+        143 Randall              15-MAR-98 296.716265
+        144 Peter                09-JUL-98 292.849598
+        145 John                 01-OCT-96 314.382932
+        146 Karen                05-JAN-97 311.182932
+        147 Alberto              10-MAR-97 309.049598
+        148 Gerald               15-OCT-99 277.416265
+        149 Eleni                29-JAN-00 273.882932
+        150 Peter                30-JAN-97 310.349598
+        151 David                24-MAR-97 308.582932
+        152 Peter                20-AUG-97 303.616265
+        153 Christopher          30-MAR-98 296.216265
+        154 Nanette              09-DEC-98 287.749598
+        155 Oliver               23-NOV-99 276.116265
+        156 Janette              30-JAN-96 322.549598
+        157 Patrick              04-MAR-96 321.416265
+        158 Allan                01-AUG-96 316.416265
+        159 Lindsey              10-MAR-97 309.049598
+        160 Louise               15-DEC-97 299.716265
+        161 Sarath               03-NOV-98 288.949598
+        162 Clara                11-NOV-97 300.849598
+        163 Danielle             19-MAR-99 284.416265
+        164 Mattea               24-JAN-00 274.049598
+        165 David                23-FEB-00 273.049598
+        166 Sundar               24-MAR-00 272.049598
+        167 Amit                 21-APR-00 271.116265
+        168 Lisa                 11-MAR-97 309.016265
+        169 Harrison             23-MAR-98 296.449598
+        170 Tayler               24-JAN-98 298.382932
+        171 William              23-FEB-99 285.216265
+        172 Elizabeth            24-MAR-99 284.249598
+        173 Sundita              21-APR-00 271.116265
+        174 Ellen                11-MAY-96 319.149598
+        175 Alyssa               19-MAR-97 308.749598
+        176 Jonathon             24-MAR-98 296.416265
+        177 Jack                 23-APR-98 295.416265
+        178 Kimberely            24-MAY-99 282.216265
+        179 Charles              04-JAN-00 274.716265
+        180 Winston              24-JAN-98 298.382932
+        181 Jean                 23-FEB-98 297.382932
+        182 Martha               21-JUN-99 281.282932
+        183 Girard               03-FEB-00 273.716265
+        184 Nandita              27-JAN-96 322.649598
+        185 Alexis               20-FEB-97 309.649598
+        186 Julia                24-JUN-98 293.349598
+        187 Anthony              07-FEB-99 285.749598
+        188 Kelly                14-JUN-97 305.849598
+        189 Jennifer             13-AUG-97 303.849598
+        190 Timothy              11-JUL-98 292.782932
+        191 Randall              19-DEC-99 275.249598
+        192 Sarah                04-FEB-96 322.382932
+        193 Britney              03-MAR-97 309.282932
+        194 Samuel               01-JUL-98 293.116265
+        195 Vance                17-MAR-99 284.482932
+        196 Alana                24-APR-98 295.382932
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE        EXP
+----------- -------------------- --------- ----------
+        197 Kevin                23-MAY-98 294.416265
+        198 Donald               21-JUN-99 281.282932
+        199 Douglas              13-JAN-00 274.416265
+        200 Jennifer             17-SEP-87 424.449598
+        201 Michael              17-FEB-96 321.949598
+        202 Pat                  17-AUG-97 303.716265
+        203 Susan                07-JUN-94 342.616265
+        204 Hermann              07-JUN-94 342.616265
+        205 Shelley              07-JUN-94 342.616265
+        206 William              07-JUN-94 342.616265
+
+107 rows selected.
+
+SQL> select employee_id, first_name, hire_date, round(sysdate-hire_date)/30 as exp from employees;
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE        EXP
+----------- -------------------- --------- ----------
+        100 Steven               17-JUN-87      427.5
+        101 Neena                21-SEP-89 399.933333
+        102 Lex                  13-JAN-93      359.6
+        103 Alexander            03-JAN-90 396.466667
+        104 Bruce                21-MAY-91      379.7
+        105 David                25-JUN-97 305.466667
+        106 Valli                05-FEB-98 297.966667
+        107 Diana                07-FEB-99 285.733333
+        108 Nancy                17-AUG-94 340.233333
+        109 Daniel               16-AUG-94 340.266667
+        110 John                 28-SEP-97      302.3
+        111 Ismael               30-SEP-97 302.233333
+        112 Jose Manuel          07-MAR-98 296.966667
+        113 Luis                 07-DEC-99 275.633333
+        114 Den                  07-DEC-94      336.5
+        115 Alexander            18-MAY-95      331.1
+        116 Shelli               24-DEC-97      299.4
+        117 Sigal                24-JUL-97      304.5
+        118 Guy                  15-NOV-98 288.533333
+        119 Karen                10-AUG-99      279.6
+        120 Matthew              18-JUL-96 316.866667
+        121 Adam                 10-APR-97        308
+        122 Payam                01-MAY-95 331.666667
+        123 Shanta               10-OCT-97      301.9
+        124 Kevin                16-NOV-99 276.333333
+        125 Julia                16-JUL-97 304.766667
+        126 Irene                28-SEP-98 290.133333
+        127 James                14-JAN-99 286.533333
+        128 Steven               08-MAR-00 272.566667
+        129 Laura                20-AUG-97      303.6
+        130 Mozhe                30-OCT-97 301.233333
+        131 James                16-FEB-97 309.766667
+        132 TJ                   10-APR-99 283.666667
+        133 Jason                14-JUN-96        318
+        134 Michael              26-AUG-98 291.233333
+        135 Ki                   12-DEC-99 275.466667
+        136 Hazel                06-FEB-00      273.6
+        137 Renske               14-JUL-95      329.2
+        138 Stephen              26-OCT-97 301.366667
+        139 John                 12-FEB-98 297.733333
+        140 Joshua               06-APR-98 295.966667
+        141 Trenna               17-OCT-95 326.033333
+        142 Curtis               29-JAN-97 310.366667
+        143 Randall              15-MAR-98      296.7
+        144 Peter                09-JUL-98 292.833333
+        145 John                 01-OCT-96 314.366667
+        146 Karen                05-JAN-97 311.166667
+        147 Alberto              10-MAR-97 309.033333
+        148 Gerald               15-OCT-99      277.4
+        149 Eleni                29-JAN-00 273.866667
+        150 Peter                30-JAN-97 310.333333
+        151 David                24-MAR-97 308.566667
+        152 Peter                20-AUG-97      303.6
+        153 Christopher          30-MAR-98      296.2
+        154 Nanette              09-DEC-98 287.733333
+        155 Oliver               23-NOV-99      276.1
+        156 Janette              30-JAN-96 322.533333
+        157 Patrick              04-MAR-96      321.4
+        158 Allan                01-AUG-96      316.4
+        159 Lindsey              10-MAR-97 309.033333
+        160 Louise               15-DEC-97      299.7
+        161 Sarath               03-NOV-98 288.933333
+        162 Clara                11-NOV-97 300.833333
+        163 Danielle             19-MAR-99      284.4
+        164 Mattea               24-JAN-00 274.033333
+        165 David                23-FEB-00 273.033333
+        166 Sundar               24-MAR-00 272.033333
+        167 Amit                 21-APR-00      271.1
+        168 Lisa                 11-MAR-97        309
+        169 Harrison             23-MAR-98 296.433333
+        170 Tayler               24-JAN-98 298.366667
+        171 William              23-FEB-99      285.2
+        172 Elizabeth            24-MAR-99 284.233333
+        173 Sundita              21-APR-00      271.1
+        174 Ellen                11-MAY-96 319.133333
+        175 Alyssa               19-MAR-97 308.733333
+        176 Jonathon             24-MAR-98      296.4
+        177 Jack                 23-APR-98      295.4
+        178 Kimberely            24-MAY-99      282.2
+        179 Charles              04-JAN-00      274.7
+        180 Winston              24-JAN-98 298.366667
+        181 Jean                 23-FEB-98 297.366667
+        182 Martha               21-JUN-99 281.266667
+        183 Girard               03-FEB-00      273.7
+        184 Nandita              27-JAN-96 322.633333
+        185 Alexis               20-FEB-97 309.633333
+        186 Julia                24-JUN-98 293.333333
+        187 Anthony              07-FEB-99 285.733333
+        188 Kelly                14-JUN-97 305.833333
+        189 Jennifer             13-AUG-97 303.833333
+        190 Timothy              11-JUL-98 292.766667
+        191 Randall              19-DEC-99 275.233333
+        192 Sarah                04-FEB-96 322.366667
+        193 Britney              03-MAR-97 309.266667
+        194 Samuel               01-JUL-98      293.1
+        195 Vance                17-MAR-99 284.466667
+        196 Alana                24-APR-98 295.366667
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE        EXP
+----------- -------------------- --------- ----------
+        197 Kevin                23-MAY-98      294.4
+        198 Donald               21-JUN-99 281.266667
+        199 Douglas              13-JAN-00      274.4
+        200 Jennifer             17-SEP-87 424.433333
+        201 Michael              17-FEB-96 321.933333
+        202 Pat                  17-AUG-97      303.7
+        203 Susan                07-JUN-94      342.6
+        204 Hermann              07-JUN-94      342.6
+        205 Shelley              07-JUN-94      342.6
+        206 William              07-JUN-94      342.6
+
+107 rows selected.
+
+SQL> select employee_id, first_name, hire_date, round((sysdate-hire_date)/30) as exp from employees;
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE        EXP
+----------- -------------------- --------- ----------
+        100 Steven               17-JUN-87        428
+        101 Neena                21-SEP-89        400
+        102 Lex                  13-JAN-93        360
+        103 Alexander            03-JAN-90        396
+        104 Bruce                21-MAY-91        380
+        105 David                25-JUN-97        305
+        106 Valli                05-FEB-98        298
+        107 Diana                07-FEB-99        286
+        108 Nancy                17-AUG-94        340
+        109 Daniel               16-AUG-94        340
+        110 John                 28-SEP-97        302
+        111 Ismael               30-SEP-97        302
+        112 Jose Manuel          07-MAR-98        297
+        113 Luis                 07-DEC-99        276
+        114 Den                  07-DEC-94        337
+        115 Alexander            18-MAY-95        331
+        116 Shelli               24-DEC-97        299
+        117 Sigal                24-JUL-97        305
+        118 Guy                  15-NOV-98        289
+        119 Karen                10-AUG-99        280
+        120 Matthew              18-JUL-96        317
+        121 Adam                 10-APR-97        308
+        122 Payam                01-MAY-95        332
+        123 Shanta               10-OCT-97        302
+        124 Kevin                16-NOV-99        276
+        125 Julia                16-JUL-97        305
+        126 Irene                28-SEP-98        290
+        127 James                14-JAN-99        287
+        128 Steven               08-MAR-00        273
+        129 Laura                20-AUG-97        304
+        130 Mozhe                30-OCT-97        301
+        131 James                16-FEB-97        310
+        132 TJ                   10-APR-99        284
+        133 Jason                14-JUN-96        318
+        134 Michael              26-AUG-98        291
+        135 Ki                   12-DEC-99        275
+        136 Hazel                06-FEB-00        274
+        137 Renske               14-JUL-95        329
+        138 Stephen              26-OCT-97        301
+        139 John                 12-FEB-98        298
+        140 Joshua               06-APR-98        296
+        141 Trenna               17-OCT-95        326
+        142 Curtis               29-JAN-97        310
+        143 Randall              15-MAR-98        297
+        144 Peter                09-JUL-98        293
+        145 John                 01-OCT-96        314
+        146 Karen                05-JAN-97        311
+        147 Alberto              10-MAR-97        309
+        148 Gerald               15-OCT-99        277
+        149 Eleni                29-JAN-00        274
+        150 Peter                30-JAN-97        310
+        151 David                24-MAR-97        309
+        152 Peter                20-AUG-97        304
+        153 Christopher          30-MAR-98        296
+        154 Nanette              09-DEC-98        288
+        155 Oliver               23-NOV-99        276
+        156 Janette              30-JAN-96        323
+        157 Patrick              04-MAR-96        321
+        158 Allan                01-AUG-96        316
+        159 Lindsey              10-MAR-97        309
+        160 Louise               15-DEC-97        300
+        161 Sarath               03-NOV-98        289
+        162 Clara                11-NOV-97        301
+        163 Danielle             19-MAR-99        284
+        164 Mattea               24-JAN-00        274
+        165 David                23-FEB-00        273
+        166 Sundar               24-MAR-00        272
+        167 Amit                 21-APR-00        271
+        168 Lisa                 11-MAR-97        309
+        169 Harrison             23-MAR-98        296
+        170 Tayler               24-JAN-98        298
+        171 William              23-FEB-99        285
+        172 Elizabeth            24-MAR-99        284
+        173 Sundita              21-APR-00        271
+        174 Ellen                11-MAY-96        319
+        175 Alyssa               19-MAR-97        309
+        176 Jonathon             24-MAR-98        296
+        177 Jack                 23-APR-98        295
+        178 Kimberely            24-MAY-99        282
+        179 Charles              04-JAN-00        275
+        180 Winston              24-JAN-98        298
+        181 Jean                 23-FEB-98        297
+        182 Martha               21-JUN-99        281
+        183 Girard               03-FEB-00        274
+        184 Nandita              27-JAN-96        323
+        185 Alexis               20-FEB-97        310
+        186 Julia                24-JUN-98        293
+        187 Anthony              07-FEB-99        286
+        188 Kelly                14-JUN-97        306
+        189 Jennifer             13-AUG-97        304
+        190 Timothy              11-JUL-98        293
+        191 Randall              19-DEC-99        275
+        192 Sarah                04-FEB-96        322
+        193 Britney              03-MAR-97        309
+        194 Samuel               01-JUL-98        293
+        195 Vance                17-MAR-99        284
+        196 Alana                24-APR-98        295
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE        EXP
+----------- -------------------- --------- ----------
+        197 Kevin                23-MAY-98        294
+        198 Donald               21-JUN-99        281
+        199 Douglas              13-JAN-00        274
+        200 Jennifer             17-SEP-87        424
+        201 Michael              17-FEB-96        322
+        202 Pat                  17-AUG-97        304
+        203 Susan                07-JUN-94        343
+        204 Hermann              07-JUN-94        343
+        205 Shelley              07-JUN-94        343
+        206 William              07-JUN-94        343
+
+107 rows selected.
+
+SQL> select employee_id, first_name, hire_date, round((sysdate-hire_date)/30,0) as exp from employees;
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE        EXP
+----------- -------------------- --------- ----------
+        100 Steven               17-JUN-87        428
+        101 Neena                21-SEP-89        400
+        102 Lex                  13-JAN-93        360
+        103 Alexander            03-JAN-90        396
+        104 Bruce                21-MAY-91        380
+        105 David                25-JUN-97        305
+        106 Valli                05-FEB-98        298
+        107 Diana                07-FEB-99        286
+        108 Nancy                17-AUG-94        340
+        109 Daniel               16-AUG-94        340
+        110 John                 28-SEP-97        302
+        111 Ismael               30-SEP-97        302
+        112 Jose Manuel          07-MAR-98        297
+        113 Luis                 07-DEC-99        276
+        114 Den                  07-DEC-94        337
+        115 Alexander            18-MAY-95        331
+        116 Shelli               24-DEC-97        299
+        117 Sigal                24-JUL-97        305
+        118 Guy                  15-NOV-98        289
+        119 Karen                10-AUG-99        280
+        120 Matthew              18-JUL-96        317
+        121 Adam                 10-APR-97        308
+        122 Payam                01-MAY-95        332
+        123 Shanta               10-OCT-97        302
+        124 Kevin                16-NOV-99        276
+        125 Julia                16-JUL-97        305
+        126 Irene                28-SEP-98        290
+        127 James                14-JAN-99        287
+        128 Steven               08-MAR-00        273
+        129 Laura                20-AUG-97        304
+        130 Mozhe                30-OCT-97        301
+        131 James                16-FEB-97        310
+        132 TJ                   10-APR-99        284
+        133 Jason                14-JUN-96        318
+        134 Michael              26-AUG-98        291
+        135 Ki                   12-DEC-99        275
+        136 Hazel                06-FEB-00        274
+        137 Renske               14-JUL-95        329
+        138 Stephen              26-OCT-97        301
+        139 John                 12-FEB-98        298
+        140 Joshua               06-APR-98        296
+        141 Trenna               17-OCT-95        326
+        142 Curtis               29-JAN-97        310
+        143 Randall              15-MAR-98        297
+        144 Peter                09-JUL-98        293
+        145 John                 01-OCT-96        314
+        146 Karen                05-JAN-97        311
+        147 Alberto              10-MAR-97        309
+        148 Gerald               15-OCT-99        277
+        149 Eleni                29-JAN-00        274
+        150 Peter                30-JAN-97        310
+        151 David                24-MAR-97        309
+        152 Peter                20-AUG-97        304
+        153 Christopher          30-MAR-98        296
+        154 Nanette              09-DEC-98        288
+        155 Oliver               23-NOV-99        276
+        156 Janette              30-JAN-96        323
+        157 Patrick              04-MAR-96        321
+        158 Allan                01-AUG-96        316
+        159 Lindsey              10-MAR-97        309
+        160 Louise               15-DEC-97        300
+        161 Sarath               03-NOV-98        289
+        162 Clara                11-NOV-97        301
+        163 Danielle             19-MAR-99        284
+        164 Mattea               24-JAN-00        274
+        165 David                23-FEB-00        273
+        166 Sundar               24-MAR-00        272
+        167 Amit                 21-APR-00        271
+        168 Lisa                 11-MAR-97        309
+        169 Harrison             23-MAR-98        296
+        170 Tayler               24-JAN-98        298
+        171 William              23-FEB-99        285
+        172 Elizabeth            24-MAR-99        284
+        173 Sundita              21-APR-00        271
+        174 Ellen                11-MAY-96        319
+        175 Alyssa               19-MAR-97        309
+        176 Jonathon             24-MAR-98        296
+        177 Jack                 23-APR-98        295
+        178 Kimberely            24-MAY-99        282
+        179 Charles              04-JAN-00        275
+        180 Winston              24-JAN-98        298
+        181 Jean                 23-FEB-98        297
+        182 Martha               21-JUN-99        281
+        183 Girard               03-FEB-00        274
+        184 Nandita              27-JAN-96        323
+        185 Alexis               20-FEB-97        310
+        186 Julia                24-JUN-98        293
+        187 Anthony              07-FEB-99        286
+        188 Kelly                14-JUN-97        306
+        189 Jennifer             13-AUG-97        304
+        190 Timothy              11-JUL-98        293
+        191 Randall              19-DEC-99        275
+        192 Sarah                04-FEB-96        322
+        193 Britney              03-MAR-97        309
+        194 Samuel               01-JUL-98        293
+        195 Vance                17-MAR-99        284
+        196 Alana                24-APR-98        295
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE        EXP
+----------- -------------------- --------- ----------
+        197 Kevin                23-MAY-98        294
+        198 Donald               21-JUN-99        281
+        199 Douglas              13-JAN-00        274
+        200 Jennifer             17-SEP-87        424
+        201 Michael              17-FEB-96        322
+        202 Pat                  17-AUG-97        304
+        203 Susan                07-JUN-94        343
+        204 Hermann              07-JUN-94        343
+        205 Shelley              07-JUN-94        343
+        206 William              07-JUN-94        343
+
+107 rows selected.
+
+SQL> select employee_id, first_name, hire_date, round(((sysdate-hire_date)/30),0) as exp from employees;
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE        EXP
+----------- -------------------- --------- ----------
+        100 Steven               17-JUN-87        428
+        101 Neena                21-SEP-89        400
+        102 Lex                  13-JAN-93        360
+        103 Alexander            03-JAN-90        396
+        104 Bruce                21-MAY-91        380
+        105 David                25-JUN-97        305
+        106 Valli                05-FEB-98        298
+        107 Diana                07-FEB-99        286
+        108 Nancy                17-AUG-94        340
+        109 Daniel               16-AUG-94        340
+        110 John                 28-SEP-97        302
+        111 Ismael               30-SEP-97        302
+        112 Jose Manuel          07-MAR-98        297
+        113 Luis                 07-DEC-99        276
+        114 Den                  07-DEC-94        337
+        115 Alexander            18-MAY-95        331
+        116 Shelli               24-DEC-97        299
+        117 Sigal                24-JUL-97        305
+        118 Guy                  15-NOV-98        289
+        119 Karen                10-AUG-99        280
+        120 Matthew              18-JUL-96        317
+        121 Adam                 10-APR-97        308
+        122 Payam                01-MAY-95        332
+        123 Shanta               10-OCT-97        302
+        124 Kevin                16-NOV-99        276
+        125 Julia                16-JUL-97        305
+        126 Irene                28-SEP-98        290
+        127 James                14-JAN-99        287
+        128 Steven               08-MAR-00        273
+        129 Laura                20-AUG-97        304
+        130 Mozhe                30-OCT-97        301
+        131 James                16-FEB-97        310
+        132 TJ                   10-APR-99        284
+        133 Jason                14-JUN-96        318
+        134 Michael              26-AUG-98        291
+        135 Ki                   12-DEC-99        275
+        136 Hazel                06-FEB-00        274
+        137 Renske               14-JUL-95        329
+        138 Stephen              26-OCT-97        301
+        139 John                 12-FEB-98        298
+        140 Joshua               06-APR-98        296
+        141 Trenna               17-OCT-95        326
+        142 Curtis               29-JAN-97        310
+        143 Randall              15-MAR-98        297
+        144 Peter                09-JUL-98        293
+        145 John                 01-OCT-96        314
+        146 Karen                05-JAN-97        311
+        147 Alberto              10-MAR-97        309
+        148 Gerald               15-OCT-99        277
+        149 Eleni                29-JAN-00        274
+        150 Peter                30-JAN-97        310
+        151 David                24-MAR-97        309
+        152 Peter                20-AUG-97        304
+        153 Christopher          30-MAR-98        296
+        154 Nanette              09-DEC-98        288
+        155 Oliver               23-NOV-99        276
+        156 Janette              30-JAN-96        323
+        157 Patrick              04-MAR-96        321
+        158 Allan                01-AUG-96        316
+        159 Lindsey              10-MAR-97        309
+        160 Louise               15-DEC-97        300
+        161 Sarath               03-NOV-98        289
+        162 Clara                11-NOV-97        301
+        163 Danielle             19-MAR-99        284
+        164 Mattea               24-JAN-00        274
+        165 David                23-FEB-00        273
+        166 Sundar               24-MAR-00        272
+        167 Amit                 21-APR-00        271
+        168 Lisa                 11-MAR-97        309
+        169 Harrison             23-MAR-98        296
+        170 Tayler               24-JAN-98        298
+        171 William              23-FEB-99        285
+        172 Elizabeth            24-MAR-99        284
+        173 Sundita              21-APR-00        271
+        174 Ellen                11-MAY-96        319
+        175 Alyssa               19-MAR-97        309
+        176 Jonathon             24-MAR-98        296
+        177 Jack                 23-APR-98        295
+        178 Kimberely            24-MAY-99        282
+        179 Charles              04-JAN-00        275
+        180 Winston              24-JAN-98        298
+        181 Jean                 23-FEB-98        297
+        182 Martha               21-JUN-99        281
+        183 Girard               03-FEB-00        274
+        184 Nandita              27-JAN-96        323
+        185 Alexis               20-FEB-97        310
+        186 Julia                24-JUN-98        293
+        187 Anthony              07-FEB-99        286
+        188 Kelly                14-JUN-97        306
+        189 Jennifer             13-AUG-97        304
+        190 Timothy              11-JUL-98        293
+        191 Randall              19-DEC-99        275
+        192 Sarah                04-FEB-96        322
+        193 Britney              03-MAR-97        309
+        194 Samuel               01-JUL-98        293
+        195 Vance                17-MAR-99        284
+        196 Alana                24-APR-98        295
+
+EMPLOYEE_ID FIRST_NAME           HIRE_DATE        EXP
+----------- -------------------- --------- ----------
+        197 Kevin                23-MAY-98        294
+        198 Donald               21-JUN-99        281
+        199 Douglas              13-JAN-00        274
+        200 Jennifer             17-SEP-87        424
+        201 Michael              17-FEB-96        322
+        202 Pat                  17-AUG-97        304
+        203 Susan                07-JUN-94        343
+        204 Hermann              07-JUN-94        343
+        205 Shelley              07-JUN-94        343
+        206 William              07-JUN-94        343
+
+107 rows selected.
+
+SQL> select first_name,department_id from employees where department_id in(10,20,30);
+
+FIRST_NAME           DEPARTMENT_ID
+-------------------- -------------
+Jennifer                        10
+Michael                         20
+Pat                             20
+Den                             30
+Alexander                       30
+Shelli                          30
+Sigal                           30
+Guy                             30
+Karen                           30
+
+9 rows selected.
+
+SQL> select first_name,department_id from employees where department_id not in(10,20,30);
+
+FIRST_NAME           DEPARTMENT_ID
+-------------------- -------------
+Steven                          90
+Neena                           90
+Lex                             90
+Alexander                       60
+Bruce                           60
+David                           60
+Valli                           60
+Diana                           60
+Nancy                          100
+Daniel                         100
+John                           100
+Ismael                         100
+Jose Manuel                    100
+Luis                           100
+Matthew                         50
+Adam                            50
+Payam                           50
+Shanta                          50
+Kevin                           50
+Julia                           50
+Irene                           50
+James                           50
+Steven                          50
+Laura                           50
+Mozhe                           50
+James                           50
+TJ                              50
+Jason                           50
+Michael                         50
+Ki                              50
+Hazel                           50
+Renske                          50
+Stephen                         50
+John                            50
+Joshua                          50
+Trenna                          50
+Curtis                          50
+Randall                         50
+Peter                           50
+John                            80
+Karen                           80
+Alberto                         80
+Gerald                          80
+Eleni                           80
+Peter                           80
+David                           80
+Peter                           80
+Christopher                     80
+Nanette                         80
+Oliver                          80
+Janette                         80
+Patrick                         80
+Allan                           80
+Lindsey                         80
+Louise                          80
+Sarath                          80
+Clara                           80
+Danielle                        80
+Mattea                          80
+David                           80
+Sundar                          80
+Amit                            80
+Lisa                            80
+Harrison                        80
+Tayler                          80
+William                         80
+Elizabeth                       80
+Sundita                         80
+Ellen                           80
+Alyssa                          80
+Jonathon                        80
+Jack                            80
+Charles                         80
+Winston                         50
+Jean                            50
+Martha                          50
+Girard                          50
+Nandita                         50
+Alexis                          50
+Julia                           50
+Anthony                         50
+Kelly                           50
+Jennifer                        50
+Timothy                         50
+Randall                         50
+Sarah                           50
+Britney                         50
+Samuel                          50
+Vance                           50
+Alana                           50
+Kevin                           50
+Donald                          50
+Douglas                         50
+Susan                           40
+Hermann                         70
+Shelley                        110
+William                        110
+
+97 rows selected.
+
+SQL> select employee_id, commission_pct from employees;
+
+EMPLOYEE_ID COMMISSION_PCT
+----------- --------------
+        100
+        101
+        102
+        103
+        104
+        105
+        106
+        107
+        108
+        109
+        110
+        111
+        112
+        113
+        114
+        115
+        116
+        117
+        118
+        119
+        120
+        121
+        122
+        123
+        124
+        125
+        126
+        127
+        128
+        129
+        130
+        131
+        132
+        133
+        134
+        135
+        136
+        137
+        138
+        139
+        140
+        141
+        142
+        143
+        144
+        145             .4
+        146             .3
+        147             .3
+        148             .3
+        149             .2
+        150             .3
+        151            .25
+        152            .25
+        153             .2
+        154             .2
+        155            .15
+        156            .35
+        157            .35
+        158            .35
+        159             .3
+        160             .3
+        161            .25
+        162            .25
+        163            .15
+        164             .1
+        165             .1
+        166             .1
+        167             .1
+        168            .25
+        169             .2
+        170             .2
+        171            .15
+        172            .15
+        173             .1
+        174             .3
+        175            .25
+        176             .2
+        177             .2
+        178            .15
+        179             .1
+        180
+        181
+        182
+        183
+        184
+        185
+        186
+        187
+        188
+        189
+        190
+        191
+        192
+        193
+        194
+        195
+        196
+
+EMPLOYEE_ID COMMISSION_PCT
+----------- --------------
+        197
+        198
+        199
+        200
+        201
+        202
+        203
+        204
+        205
+        206
+
+107 rows selected.
+
+SQL> select employee_id, commission_pct from employees where commission_pct is null;
+
+EMPLOYEE_ID COMMISSION_PCT
+----------- --------------
+        100
+        101
+        102
+        103
+        104
+        105
+        106
+        107
+        108
+        109
+        110
+        111
+        112
+        113
+        114
+        115
+        116
+        117
+        118
+        119
+        120
+        121
+        122
+        123
+        124
+        125
+        126
+        127
+        128
+        129
+        130
+        131
+        132
+        133
+        134
+        135
+        136
+        137
+        138
+        139
+        140
+        141
+        142
+        143
+        144
+        180
+        181
+        182
+        183
+        184
+        185
+        186
+        187
+        188
+        189
+        190
+        191
+        192
+        193
+        194
+        195
+        196
+        197
+        198
+        199
+        200
+        201
+        202
+        203
+        204
+        205
+        206
+
+72 rows selected.
+
+SQL> select employee_id, commission_pct from employees where commission_pct is not null;
+
+EMPLOYEE_ID COMMISSION_PCT
+----------- --------------
+        145             .4
+        146             .3
+        147             .3
+        148             .3
+        149             .2
+        150             .3
+        151            .25
+        152            .25
+        153             .2
+        154             .2
+        155            .15
+        156            .35
+        157            .35
+        158            .35
+        159             .3
+        160             .3
+        161            .25
+        162            .25
+        163            .15
+        164             .1
+        165             .1
+        166             .1
+        167             .1
+        168            .25
+        169             .2
+        170             .2
+        171            .15
+        172            .15
+        173             .1
+        174             .3
+        175            .25
+        176             .2
+        177             .2
+        178            .15
+        179             .1
+
+35 rows selected.

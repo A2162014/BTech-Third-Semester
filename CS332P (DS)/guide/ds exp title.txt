@@ -1,0 +1,12 @@
+implementation of stack
+infix to postfix
+postfix
+implementatio of queue
+implementation of stack using linked list
+.
+.
+.
+Linear probing
+merge sort
+<another sort>
+prims algorithm

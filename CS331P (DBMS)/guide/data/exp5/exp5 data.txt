@@ -1,0 +1,102 @@
+create table authors(id number(2),
+first_name varchar2(20),
+last_name varchar2(20),
+primary key(id));
+
+insert into authors values(11,'Ellen','Writer');
+insert into authors values(12,'Olga','Savelieva');
+insert into authors values(13,'Jack','Smart');
+insert into authors values(14,'Donald','Brain');
+insert into authors values(15,'Yao','Dou');
+
+create table editors(id number(2),
+first_name varchar2(20),
+last_name varchar2(20),
+primary key(id));
+
+insert into editors values(21,'Daniel','Brown');
+insert into editors values(22,'Mark','Johnson');
+insert into editors values(23,'Maria','Evans');
+insert into editors values(24,'Cathrine','Roberts');
+insert into editors values(25,'Sebastine','Wright');
+insert into editors values(26,'Barbara','Jones');
+insert into editors values(27,'Matthew','Smith');
+
+
+create table translators(id number(2),
+first_name varchar2(20),
+last_name varchar2(20),
+primary key(id));
+
+insert into translators values(31,'Ira','Davies');
+insert into translators values(32,'Ling','Weng');
+insert into translators values(33,'Kristian','Green');
+insert into translators values(34,'Roman','Edwards');
+
+
+create table books1(id number(1), 
+title varchar2(40), 
+type varchar2(20), 
+author_id number(2) references authors(id) on delete set null, 
+editor_id number(2) references editors(id) on delete set null,
+translator_id number(2) references transators(id) on delete set null,
+primary key(id));
+
+insert into books1 values(1,'Time to Grow up!','original',11,21,NULL);
+insert into books1 values(2,'Your Trip','translated',15,22,32);
+insert into books1 values(3,'Lovely Love','original',14,24,NULL);
+insert into books1 values(4,'Dream Your Life','original',11,24,NULL);
+insert into books1 values(5,'Oranges','translated',12,25,31);
+insert into books1 values(6,'Your Happy Life','translated',15,22,33);
+insert into books1 values(7,'Applied AI','translated',13,23,34);
+insert into books1 values(8,'My Last Book','original',11,28,NULL);
+
+select B.id, B.title, A.first_name, A.last_name
+from books1 B
+inner join authors A
+on B.author_id = A.id
+order by B.id; 
+
+select B.id, B.title, T.last_name AS Translator 
+from books1 B 
+inner join translators T 
+on B.translator_id = T.id 
+order by b.id;
+
+select B.id, B.title, B.type, A.last_name AS Author, 
+T.last_name AS Translator 
+from books1 B 
+left join authors A 
+on B.author_id = A.id 
+left join translators T 
+on B.translator_id = T.id 
+order by B.id;
+
+select B.id, B.title, E.last_name AS Editor 
+from books1 B 
+left join editors E 
+on B.editor_id = E.id 
+order by B.id;
+
+select B.id, b.title, E.last_name AS Editor 
+from books1 B 
+right join editors E 
+on B.editor_id = E.id 
+order by B.id;
+
+select B.id, B.title, E.last_name AS Editor 
+from books1 B 
+full join editors E 
+on B.editor_id = E.id 
+order by B.id;
+
+select  B.id, B.title, A.last_name AS Author, E.last_name AS Editor,
+T.last_name AS Translator 
+from  books1 B 
+full join authors A 
+on B.author_id = A.id 
+full join editors E 
+on B.editor_id = E.id 
+full join translators T 
+on B.translator_id = T.id 
+order by B.id;

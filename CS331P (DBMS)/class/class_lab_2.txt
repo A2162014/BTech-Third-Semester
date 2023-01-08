@@ -1,0 +1,64 @@
+Lab - 2 (DBMS)
+
+Topic - 0: WHERE
+
+Topic - 1: Substition variables
+
+select &c1,&c2,.....&cn from <table_name>;
+insert into <table_name> values(&c1,&c2,....&cn);
+
+Topic - 2: Case manipulation functions
+
+lower(<column_name>) - all letters in word is LOWERd;ASHVATH -> ashvath
+upper(<column_name>) - all letters in word is CAPd;ashvath -> ASHVATH
+initcap(<column_name>) - initial letter in word is CAPd; ashvath -> Ashvath
+
+Topic - 3: order by
+
+desc
+asc (by default)
+
+Topic - 4: LIKE 
+
+'_a%' - second letter in word should be 'a'. rest of the letters after the a is not considered.
+'__a%' - third letter in word should be 'a'. rest of the letters after the a is not considered.
+
+query - display first names of employees having REP in their job id.
+(hint: '%REP%')
+
+Topic - 5: Aggregate functions
+
+sum(<column_name>)
+max(<column_name>)
+min(<column_name>)
+avg(<column_name>)
+count(<column_name>)
+
+Topic - 6: GROUP by
+
+single level and multi level group by
+WHERE does not work after GROUP by. So, use HAVING.
+order of use of functions:
+SELECT>FROM>GROUP>HAVING>ORDER
+
+Topic - 7: ROUND function
+
+dual - dummy table
+ex: round(45.93456,2) -> 45.93
+
+Topic - 8: DATE datatype
+
+use UPDATE function to insert values into specific columns.
+UPDATE <table_name> SET <column_name> = 'DD-MMM-YYYY';
+ex: '01-jan-2022'
+
+Topic - 9: mix of topic 7 and 8
+
+to find current date in the system
+SELECT SYSDATE FROM DUAL;
+sysdate-hire_date -> decimal value in number of days
+
+Topic - 10: IN class
+NOT IN
+
+Topic - 11: IS NULL

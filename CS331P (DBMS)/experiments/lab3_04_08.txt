@@ -1,0 +1,713 @@
+
+SQL> create table publisher(Name varchar2(20) primary key, Phone Integer, Address varchar2(20));
+
+Table created.
+
+SQL> create table book(Book_ID Integer primary key, Title varchar2(20), Pub_Year Integer, Publisher_Name references publisher(Name) on delete cascade);
+
+Table created.
+
+SQL> create table book_author(Author_Name varchar2(20),
+  2  Book_ID references book(Book_ID) on delete cascade,
+  3  primary key (Book_ID, Author_Name));
+
+Table created.
+
+SQL> create table library_branch(Branch_ID Integer primary key,
+  2  Branch_Name varchar2(20),
+  3  Address varchar2(20));
+
+Table created.
+
+SQL> create table book_copies(No_of_copies Integer,
+  2  Book_id references book(Book_ID) on delete cascade,
+  3  Branch_ID references library_branch(Branch_ID) on delete cascade,
+  4  primary key (Book_ID, Branch_ID));
+
+Table created.
+
+SQL> create table card(Card_No Integer primary key);
+
+Table created.
+
+SQL> create table book_lending(Date_out Date, Due_date Date,
+  2  Branch_ID references library_branch(Branch_ID) on delete cascade,
+  3  Card_No references card(Card_No) on delete cascade,
+  4  primary key (Branch_ID,Card_No));
+
+Table created.
+
+SQL> desc publisher;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ NAME                                      NOT NULL VARCHAR2(20)
+ PHONE                                              NUMBER(38)
+ ADDRESS                                            VARCHAR2(20)
+
+SQL> desc book;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ BOOK_ID                                   NOT NULL NUMBER(38)
+ TITLE                                              VARCHAR2(20)
+ PUB_YEAR                                           NUMBER(38)
+ PUBLISHER_NAME                                     VARCHAR2(20)
+
+SQL> desc book_author;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ AUTHOR_NAME                               NOT NULL VARCHAR2(20)
+ BOOK_ID                                   NOT NULL NUMBER(38)
+
+SQL> desc library_branch;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ BRANCH_ID                                 NOT NULL NUMBER(38)
+ BRANCH_NAME                                        VARCHAR2(20)
+ ADDRESS                                            VARCHAR2(20)
+
+SQL> desc book_copies;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ NO_OF_COPIES                                       NUMBER(38)
+ BOOK_ID                                   NOT NULL NUMBER(38)
+ BRANCH_ID                                 NOT NULL NUMBER(38)
+
+SQL> desc card;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CARD_NO                                   NOT NULL NUMBER(38)
+
+SQL> desc book_lending;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ DATE_OUT                                           DATE
+ DUE_DATE                                           DATE
+ BRANCH_ID                                 NOT NULL NUMBER(38)
+ CARD_NO                                   NOT NULL NUMBER(38)
+
+SQL> insert into publisher values('&Name',&Phone,'&Address');
+Enter value for name: Macmillan Publishers
+Enter value for phone: 08025587878
+Enter value for address: New York City
+old   1: insert into publisher values('&Name',&Phone,'&Address')
+new   1: insert into publisher values('Macmillan Publishers',08025587878,'New York City')
+
+1 row created.
+
+SQL> insert into publisher values('&Name',&Phone,'&Address');
+Enter value for name: Pearson
+Enter value for phone: 1300473277
+Enter value for address: London
+old   1: insert into publisher values('&Name',&Phone,'&Address')
+new   1: insert into publisher values('Pearson',1300473277,'London')
+
+1 row created.
+
+SQL> insert into publisher values('&Name',&Phone,'&Address');
+Enter value for name: Thomson Reuters
+Enter value for phone: 8061822000
+Enter value for address: Toronto
+old   1: insert into publisher values('&Name',&Phone,'&Address')
+new   1: insert into publisher values('Thomson Reuters',8061822000,'Toronto')
+
+1 row created.
+
+SQL> insert into publisher values('&Name',&Phone,'&Address');
+Enter value for name: Bertelsmann
+Enter value for phone: 5241802466
+Enter value for address: Germany
+old   1: insert into publisher values('&Name',&Phone,'&Address')
+new   1: insert into publisher values('Bertelsmann',5241802466,'Germany')
+
+1 row created.
+
+SQL> insert into publisher values('&Name',&Phone,'&Address');
+Enter value for name: Hachette Livre
+Enter value for phone: 8007590190
+Enter value for address: Paris
+old   1: insert into publisher values('&Name',&Phone,'&Address')
+new   1: insert into publisher values('Hachette Livre',8007590190,'Paris')
+
+1 row created.
+
+SQL> select * from publisher;
+
+NAME                      PHONE ADDRESS                                         
+-------------------- ---------- --------------------                            
+Macmillan Publishers 8025587878 New York City                                   
+Pearson              1300473277 London                                          
+Thomson Reuters      8061822000 Toronto                                         
+Bertelsmann          5241802466 Germany                                         
+Hachette Livre       8007590190 Paris                                           
+
+SQL> insert into book values(&Book_ID,'&Title',&Pub_Year,'&Publisher_Name');
+Enter value for book_id: 4415
+Enter value for title: On and Off the Bench
+Enter value for pub_year: 2021
+Enter value for publisher_name: Thomson Reuters
+old   1: insert into book values(&Book_ID,'&Title',&Pub_Year,'&Publisher_Name')
+new   1: insert into book values(4415,'On and Off the Bench',2021,'Thomson Reuters')
+
+1 row created.
+
+SQL> insert into book values(&Book_ID,'&Title',&Pub_Year,'&Publisher_Name');
+Enter value for book_id: 2246
+Enter value for title: The Magcins of Mazda
+Enter value for pub_year: 2022
+Enter value for publisher_name: Pearson
+old   1: insert into book values(&Book_ID,'&Title',&Pub_Year,'&Publisher_Name')
+new   1: insert into book values(2246,'The Magcins of Mazda',2022,'Pearson')
+
+1 row created.
+
+SQL> insert into book values(&Book_ID,'&Title',&Pub_Year,'&Publisher_Name');
+Enter value for book_id: 3164
+Enter value for title: Poil de Carotte
+Enter value for pub_year: 2018
+Enter value for publisher_name: Hachette Livre
+old   1: insert into book values(&Book_ID,'&Title',&Pub_Year,'&Publisher_Name')
+new   1: insert into book values(3164,'Poil de Carotte',2018,'Hachette Livre')
+
+1 row created.
+
+SQL> insert into book values(&Book_ID,'&Title',&Pub_Year,'&Publisher_Name');
+Enter value for book_id: 1102
+Enter value for title: The Silent Patient
+Enter value for pub_year: 2019
+Enter value for publisher_name: Macmillan Publishers
+old   1: insert into book values(&Book_ID,'&Title',&Pub_Year,'&Publisher_Name')
+new   1: insert into book values(1102,'The Silent Patient',2019,'Macmillan Publishers')
+
+1 row created.
+
+SQL> insert into book values(&Book_ID,'&Title',&Pub_Year,'&Publisher_Name');
+Enter value for book_id: 4441
+Enter value for title: Eye of the Beholder
+Enter value for pub_year: 1982
+Enter value for publisher_name: Bertelsmann
+old   1: insert into book values(&Book_ID,'&Title',&Pub_Year,'&Publisher_Name')
+new   1: insert into book values(4441,'Eye of the Beholder',1982,'Bertelsmann')
+
+1 row created.
+
+SQL> select * from book;
+
+   BOOK_ID TITLE                  PUB_YEAR PUBLISHER_NAME                       
+---------- -------------------- ---------- --------------------                 
+      4415 On and Off the Bench       2021 Thomson Reuters                      
+      2246 The Magcins of Mazda       2022 Pearson                              
+      3164 Poil de Carotte            2018 Hachette Livre                       
+      1102 The Silent Patient         2019 Macmillan Publishers                 
+      4441 Eye of the Beholder        1982 Bertelsmann                          
+
+SQL> insert into book_author values('&Author_Name',&Book_ID);
+Enter value for author_name: 1102
+Enter value for book_id: 1102
+old   1: insert into book_author values('&Author_Name',&Book_ID)
+new   1: insert into book_author values('1102',1102)
+
+1 row created.
+
+SQL> delete from book_author where Author_Name = '1102';
+
+1 row deleted.
+
+SQL> insert into book_author values('&Author_Name',&Book_ID);
+Enter value for author_name: Alex Michaelides
+Enter value for book_id: 1102
+old   1: insert into book_author values('&Author_Name',&Book_ID)
+new   1: insert into book_author values('Alex Michaelides',1102)
+
+1 row created.
+
+SQL> select * from book_author;
+
+AUTHOR_NAME             BOOK_ID                                                 
+-------------------- ----------                                                 
+Alex Michaelides           1102                                                 
+
+SQL> insert into book_author values('&Author_Name',&Book_ID);
+Enter value for author_name: Ashwin Sanghi
+Enter value for book_id: 2246
+old   1: insert into book_author values('&Author_Name',&Book_ID)
+new   1: insert into book_author values('Ashwin Sanghi',2246)
+
+1 row created.
+
+SQL> insert into book_author values('&Author_Name',&Book_ID);
+Enter value for author_name: Aloysius S. Aguiar
+Enter value for book_id: 4415
+old   1: insert into book_author values('&Author_Name',&Book_ID)
+new   1: insert into book_author values('Aloysius S. Aguiar',4415)
+
+1 row created.
+
+SQL> insert into book_author values('&Author_Name',&Book_ID);
+Enter value for author_name: Heinz Bertelsmann
+Enter value for book_id: 4441
+old   1: insert into book_author values('&Author_Name',&Book_ID)
+new   1: insert into book_author values('Heinz Bertelsmann',4441)
+
+1 row created.
+
+SQL> insert into book_author values('&Author_Name',&Book_ID);
+Enter value for author_name: Jules Renard
+Enter value for book_id: 3164
+old   1: insert into book_author values('&Author_Name',&Book_ID)
+new   1: insert into book_author values('Jules Renard',3164)
+
+1 row created.
+
+SQL> select * from book_author;
+
+AUTHOR_NAME             BOOK_ID                                                 
+-------------------- ----------                                                 
+Alex Michaelides           1102                                                 
+Ashwin Sanghi              2246                                                 
+Aloysius S. Aguiar         4415                                                 
+Heinz Bertelsmann          4441                                                 
+Jules Renard               3164                                                 
+
+SQL> insert into library_branch values(&Branch_ID,'&Branch_Name','&Address');
+Enter value for branch_id: 112
+Enter value for branch_name: Aluru
+Enter value for address: Hebbala, Bengaluru
+old   1: insert into library_branch values(&Branch_ID,'&Branch_Name','&Address')
+new   1: insert into library_branch values(112,'Aluru','Hebbala, Bengaluru')
+
+1 row created.
+
+SQL> insert into library_branch values(&Branch_ID,'&Branch_Name','&Address');
+Enter value for branch_id: 223
+Enter value for branch_name: Elenahalli
+Enter value for address: Kengeri, Bengaluru
+old   1: insert into library_branch values(&Branch_ID,'&Branch_Name','&Address')
+new   1: insert into library_branch values(223,'Elenahalli','Kengeri, Bengaluru')
+
+1 row created.
+
+SQL> insert into library_branch values(&Branch_ID,'&Branch_Name','&Address');
+Enter value for branch_id: 145
+Enter value for branch_name: Goravigere
+Enter value for address: Krishpra, Bengaluru
+old   1: insert into library_branch values(&Branch_ID,'&Branch_Name','&Address')
+new   1: insert into library_branch values(145,'Goravigere','Krishpra, Bengaluru')
+
+1 row created.
+
+SQL> insert into library_branch values(&Branch_ID,'&Branch_Name','&Address');
+Enter value for branch_id: 779
+Enter value for branch_name: Kakolu
+Enter value for address: Yelahanka, Bengaluru
+old   1: insert into library_branch values(&Branch_ID,'&Branch_Name','&Address')
+new   1: insert into library_branch values(779,'Kakolu','Yelahanka, Bengaluru')
+
+1 row created.
+
+SQL> insert into library_branch values(&Branch_ID,'&Branch_Name','&Address');
+Enter value for branch_id: 642
+Enter value for branch_name: Neraluru
+Enter value for address: Anekal, Bengaluru
+old   1: insert into library_branch values(&Branch_ID,'&Branch_Name','&Address')
+new   1: insert into library_branch values(642,'Neraluru','Anekal, Bengaluru')
+
+1 row created.
+
+SQL> select * from library_branch;
+
+ BRANCH_ID BRANCH_NAME          ADDRESS                                         
+---------- -------------------- --------------------                            
+       112 Aluru                Hebbala, Bengaluru                              
+       223 Elenahalli           Kengeri, Bengaluru                              
+       145 Goravigere           Krishpra, Bengaluru                             
+       779 Kakolu               Yelahanka, Bengaluru                            
+       642 Neraluru             Anekal, Bengaluru                               
+
+SQL> insert into library_branch values(&No_of_copies,&Book_ID,&Branch_ID);
+Enter value for no_of_copies: 11
+Enter value for book_id: 4441
+Enter value for branch_id: 112
+old   1: insert into library_branch values(&No_of_copies,&Book_ID,&Branch_ID)
+new   1: insert into library_branch values(11,4441,112)
+
+1 row created.
+
+SQL> insert into library_branch values(&No_of_copies,&Book_ID,&Branch_ID);
+Enter value for no_of_copies: 6
+Enter value for book_id: 1102
+Enter value for branch_id: 223
+old   1: insert into library_branch values(&No_of_copies,&Book_ID,&Branch_ID)
+new   1: insert into library_branch values(6,1102,223)
+
+1 row created.
+
+SQL> insert into library_branch values(&No_of_copies,&Book_ID,&Branch_ID);
+Enter value for no_of_copies: 4
+Enter value for book_id: 2246
+Enter value for branch_id: 145
+old   1: insert into library_branch values(&No_of_copies,&Book_ID,&Branch_ID)
+new   1: insert into library_branch values(4,2246,145)
+
+1 row created.
+
+SQL> insert into library_branch values(&No_of_copies,&Book_ID,&Branch_ID);
+Enter value for no_of_copies: 8
+Enter value for book_id: 3164
+Enter value for branch_id: 779
+old   1: insert into library_branch values(&No_of_copies,&Book_ID,&Branch_ID)
+new   1: insert into library_branch values(8,3164,779)
+
+1 row created.
+
+SQL> insert into library_branch values(&No_of_copies,&Book_ID,&Branch_ID);
+Enter value for no_of_copies: 5
+Enter value for book_id: 4415
+Enter value for branch_id: 642
+old   1: insert into library_branch values(&No_of_copies,&Book_ID,&Branch_ID)
+new   1: insert into library_branch values(5,4415,642)
+
+1 row created.
+
+SQL> select * from book_copies;
+
+no rows selected
+
+SQL> select * from library_branch;
+
+ BRANCH_ID BRANCH_NAME          ADDRESS                                         
+---------- -------------------- --------------------                            
+       112 Aluru                Hebbala, Bengaluru                              
+       223 Elenahalli           Kengeri, Bengaluru                              
+       145 Goravigere           Krishpra, Bengaluru                             
+       779 Kakolu               Yelahanka, Bengaluru                            
+       642 Neraluru             Anekal, Bengaluru                               
+        11 4441                 112                                             
+         6 1102                 223                                             
+         4 2246                 145                                             
+         8 3164                 779                                             
+         5 4415                 642                                             
+
+10 rows selected.
+
+SQL> delete from library_branch where Branch_ID = 11;
+
+1 row deleted.
+
+SQL> delete from library_branch where Branch_ID = 6;
+
+1 row deleted.
+
+SQL> delete from library_branch where Branch_ID = 4;
+
+1 row deleted.
+
+SQL> delete from library_branch where Branch_ID = 8;
+
+1 row deleted.
+
+SQL> delete from library_branch where Branch_ID = 5;
+
+1 row deleted.
+
+SQL> insert into book_copies values(&No_of_copies,&Book_ID,&Branch_ID);
+Enter value for no_of_copies: 11
+Enter value for book_id: 4441
+Enter value for branch_id: 112
+old   1: insert into book_copies values(&No_of_copies,&Book_ID,&Branch_ID)
+new   1: insert into book_copies values(11,4441,112)
+
+1 row created.
+
+SQL> insert into book_copies values(&No_of_copies,&Book_ID,&Branch_ID);
+Enter value for no_of_copies: 6
+Enter value for book_id: 1102
+Enter value for branch_id: 223
+old   1: insert into book_copies values(&No_of_copies,&Book_ID,&Branch_ID)
+new   1: insert into book_copies values(6,1102,223)
+
+1 row created.
+
+SQL> insert into book_copies values(&No_of_copies,&Book_ID,&Branch_ID);
+Enter value for no_of_copies: 4
+Enter value for book_id: 2246
+Enter value for branch_id: 145
+old   1: insert into book_copies values(&No_of_copies,&Book_ID,&Branch_ID)
+new   1: insert into book_copies values(4,2246,145)
+
+1 row created.
+
+SQL> insert into book_copies values(&No_of_copies,&Book_ID,&Branch_ID);
+Enter value for no_of_copies: 8
+Enter value for book_id: 3164
+Enter value for branch_id: 779
+old   1: insert into book_copies values(&No_of_copies,&Book_ID,&Branch_ID)
+new   1: insert into book_copies values(8,3164,779)
+
+1 row created.
+
+SQL> insert into book_copies values(&No_of_copies,&Book_ID,&Branch_ID);
+Enter value for no_of_copies: 5
+Enter value for book_id: 4415
+Enter value for branch_id: 642
+old   1: insert into book_copies values(&No_of_copies,&Book_ID,&Branch_ID)
+new   1: insert into book_copies values(5,4415,642)
+
+1 row created.
+
+SQL> select * from library_branch;
+
+ BRANCH_ID BRANCH_NAME          ADDRESS                                         
+---------- -------------------- --------------------                            
+       112 Aluru                Hebbala, Bengaluru                              
+       223 Elenahalli           Kengeri, Bengaluru                              
+       145 Goravigere           Krishpra, Bengaluru                             
+       779 Kakolu               Yelahanka, Bengaluru                            
+       642 Neraluru             Anekal, Bengaluru                               
+
+SQL> select * from book_copies;
+
+NO_OF_COPIES    BOOK_ID  BRANCH_ID                                              
+------------ ---------- ----------                                              
+          11       4441        112                                              
+           6       1102        223                                              
+           4       2246        145                                              
+           8       3164        779                                              
+           5       4415        642                                              
+
+SQL> insert into card values(&Card_No);
+Enter value for card_no: 65646
+old   1: insert into card values(&Card_No)
+new   1: insert into card values(65646)
+
+1 row created.
+
+SQL> insert into card values(&Card_No);
+Enter value for card_no: 13545
+old   1: insert into card values(&Card_No)
+new   1: insert into card values(13545)
+
+1 row created.
+
+SQL> insert into card values(&Card_No);
+Enter value for card_no: 76645
+old   1: insert into card values(&Card_No)
+new   1: insert into card values(76645)
+
+1 row created.
+
+SQL> insert into card values(&Card_No);
+Enter value for card_no: 21345
+old   1: insert into card values(&Card_No)
+new   1: insert into card values(21345)
+
+1 row created.
+
+SQL> insert into card values(&Card_No);
+Enter value for card_no: 48804
+old   1: insert into card values(&Card_No)
+new   1: insert into card values(48804)
+
+1 row created.
+
+SQL> select * from card;
+
+   CARD_NO                                                                      
+----------                                                                      
+     65646                                                                      
+     13545                                                                      
+     76645                                                                      
+     21345                                                                      
+     48804                                                                      
+
+SQL> insert into book_lending values('&Date_due','&Due_date',&Branch_ID,&Card_No);
+Enter value for date_due: 15-Jun-22
+Enter value for due_date: 22-Jun-22
+Enter value for branch_id: 642
+Enter value for card_no: 13545
+old   1: insert into book_lending values('&Date_due','&Due_date',&Branch_ID,&Card_No)
+new   1: insert into book_lending values('15-Jun-22','22-Jun-22',642,13545)
+
+1 row created.
+
+SQL> select * from book_lending;
+
+DATE_OUT  DUE_DATE   BRANCH_ID    CARD_NO                                       
+--------- --------- ---------- ----------                                       
+15-JUN-22 22-JUN-22        642      13545                                       
+
+SQL> insert into book_lending values('&Date_due','&Due_date',&Branch_ID,&Card_No);
+Enter value for date_due: 22-May-22
+Enter value for due_date: 29-May-22
+Enter value for branch_id: 112
+Enter value for card_no: 65646
+old   1: insert into book_lending values('&Date_due','&Due_date',&Branch_ID,&Card_No)
+new   1: insert into book_lending values('22-May-22','29-May-22',112,65646)
+
+1 row created.
+
+SQL> insert into book_lending values('&Date_due','&Due_date',&Branch_ID,&Card_No);
+Enter value for date_due: 01-Jan-22
+Enter value for due_date: 08-Jan-22
+Enter value for branch_id: 779
+Enter value for card_no: 65646
+old   1: insert into book_lending values('&Date_due','&Due_date',&Branch_ID,&Card_No)
+new   1: insert into book_lending values('01-Jan-22','08-Jan-22',779,65646)
+
+1 row created.
+
+SQL> insert into book_lending values('&Date_due','&Due_date',&Branch_ID,&Card_No);
+Enter value for date_due: 04-Mar-22
+Enter value for due_date: 11-Mar-22
+Enter value for branch_id: 145
+Enter value for card_no: 65646
+old   1: insert into book_lending values('&Date_due','&Due_date',&Branch_ID,&Card_No)
+new   1: insert into book_lending values('04-Mar-22','11-Mar-22',145,65646)
+
+1 row created.
+
+SQL> insert into book_lending values('&Date_due','&Due_date',&Branch_ID,&Card_No);
+Enter value for date_due: 18-Apr-22
+Enter value for due_date: 25-Apr-22
+Enter value for branch_id: 223
+Enter value for card_no: 21345
+old   1: insert into book_lending values('&Date_due','&Due_date',&Branch_ID,&Card_No)
+new   1: insert into book_lending values('18-Apr-22','25-Apr-22',223,21345)
+
+1 row created.
+
+SQL> select * from book_lending;
+
+DATE_OUT  DUE_DATE   BRANCH_ID    CARD_NO                                       
+--------- --------- ---------- ----------                                       
+15-JUN-22 22-JUN-22        642      13545                                       
+22-MAY-22 29-MAY-22        112      65646                                       
+01-JAN-22 08-JAN-22        779      65646                                       
+04-MAR-22 11-MAR-22        145      65646                                       
+18-APR-22 25-APR-22        223      21345                                       
+
+SQL> select * from BOOK_COPIES;
+
+NO_OF_COPIES    BOOK_ID  BRANCH_ID                                              
+------------ ---------- ----------                                              
+          11       4441        112                                              
+           6       1102        223                                              
+           4       2246        145                                              
+           8       3164        779                                              
+           5       4415        642                                              
+
+SQL> select * from LIBRARY_BRANCH;
+
+ BRANCH_ID BRANCH_NAME          ADDRESS                                         
+---------- -------------------- --------------------                            
+       112 Aluru                Hebbala, Bengaluru                              
+       223 Elenahalli           Kengeri, Bengaluru                              
+       145 Goravigere           Krishpra, Bengaluru                             
+       779 Kakolu               Yelahanka, Bengaluru                            
+       642 Neraluru             Anekal, Bengaluru                               
+
+SQL> select * from BOOK_AUTHOR;
+
+AUTHOR_NAME             BOOK_ID                                                 
+-------------------- ----------                                                 
+Alex Michaelides           1102                                                 
+Ashwin Sanghi              2246                                                 
+Aloysius S. Aguiar         4415                                                 
+Heinz Bertelsmann          4441                                                 
+Jules Renard               3164                                                 
+
+SQL> select * from BOOK;
+
+   BOOK_ID TITLE                  PUB_YEAR PUBLISHER_NAME                       
+---------- -------------------- ---------- --------------------                 
+      4415 On and Off the Bench       2021 Thomson Reuters                      
+      2246 The Magcins of Mazda       2022 Pearson                              
+      3164 Poil de Carotte            2018 Hachette Livre                       
+      1102 The Silent Patient         2019 Macmillan Publishers                 
+      4441 Eye of the Beholder        1982 Bertelsmann                          
+
+SQL> select * from BOOK;
+
+   BOOK_ID TITLE                  PUB_YEAR PUBLISHER_NAME                       
+---------- -------------------- ---------- --------------------                 
+      4415 On and Off the Bench       2021 Thomson Reuters                      
+      2246 The Magcins of Mazda       2022 Pearson                              
+      3164 Poil de Carotte            2018 Hachette Livre                       
+      1102 The Silent Patient         2019 Macmillan Publishers                 
+      4441 Eye of the Beholder        1982 Bertelsmann                          
+
+SQL> select * from PUBLISHER;
+
+NAME                      PHONE ADDRESS                                         
+-------------------- ---------- --------------------                            
+Macmillan Publishers 8025587878 New York City                                   
+Pearson              1300473277 London                                          
+Thomson Reuters      8061822000 Toronto                                         
+Bertelsmann          5241802466 Germany                                         
+Hachette Livre       8007590190 Paris                                           
+
+SQL> select * from CARD;
+
+   CARD_NO                                                                      
+----------                                                                      
+     65646                                                                      
+     13545                                                                      
+     76645                                                                      
+     21345                                                                      
+     48804                                                                      
+
+SQL> select B.Book_ID, B.Title, B.Publisher_Name, A.Author_Name, C.No_of_copies
+  2  from book B, book_author A, book_copies C, library_branch L
+  3  where B.Book_ID = A.Book_ID and B.Book_ID = C.Book_ID and L.Branch_ID = C.Branch_ID;
+
+   BOOK_ID TITLE                PUBLISHER_NAME       AUTHOR_NAME                
+---------- -------------------- -------------------- --------------------       
+NO_OF_COPIES                                                                    
+------------                                                                    
+      4441 Eye of the Beholder  Bertelsmann          Heinz Bertelsmann          
+          11                                                                    
+                                                                                
+      1102 The Silent Patient   Macmillan Publishers Alex Michaelides           
+           6                                                                    
+                                                                                
+      2246 The Magcins of Mazda Pearson              Ashwin Sanghi              
+           4                                                                    
+                                                                                
+
+   BOOK_ID TITLE                PUBLISHER_NAME       AUTHOR_NAME                
+---------- -------------------- -------------------- --------------------       
+NO_OF_COPIES                                                                    
+------------                                                                    
+      3164 Poil de Carotte      Hachette Livre       Jules Renard               
+           8                                                                    
+                                                                                
+      4415 On and Off the Bench Thomson Reuters      Aloysius S. Aguiar         
+           5                                                                    
+                                                                                
+
+SQL> set linesize 1500;
+
+SQL> select B.Book_ID, B.Title, B.Publisher_Name, A.Author_Name, C.No_of_copies
+  2  from book B, book_author A, book_copies C, library_branch L
+  3  where B.Book_ID = A.Book_ID and B.Book_ID = C.Book_ID and L.Branch_ID = C.Branch_ID;
+
+   BOOK_ID TITLE                PUBLISHER_NAME       AUTHOR_NAME          NO_OF_COPIES                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+---------- -------------------- -------------------- -------------------- ------------                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+      4441 Eye of the Beholder  Bertelsmann          Heinz Bertelsmann              11                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+      1102 The Silent Patient   Macmillan Publishers Alex Michaelides                6                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+      2246 The Magcins of Mazda Pearson              Ashwin Sanghi                   4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+      3164 Poil de Carotte      Hachette Livre       Jules Renard                    8                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+      4415 On and Off the Bench Thomson Reuters      Aloysius S. Aguiar              5                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+
+SQL> select Card_No from book_lending where
+  2  Date_out between '01-Jan-2022' and '01-Jun-2022' group by
+  3  Card_No having count(*)>3;
+
+no rows selected
+
+SQL> select Card_No from book_lending where
+  2  Date_out between '01-Jan-2022' and '01-Jun-2022' group by
+  3  Card_No having count(*)=3;
+
+   CARD_NO                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+----------                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+     65646
